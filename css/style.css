@@ -1,0 +1,578 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Shrikhand&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+  padding-top: 50px; }
+
+.gridMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../assets/img/background.png);
+  background-repeat: no-repeat;
+  background-size: 95vw,70vh;
+  background-position-x: center;
+  background-position-y: 100px;
+  padding-top: 250px; }
+  .gridMain .searchBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100px;
+  padding-top: 30px; }
+  section h1 {
+    width: 800px;
+    display: flex;
+    flex-direction: grow;
+    justify-content: center;
+    align-items: center;
+    color: #b9f331; }
+  section article, section .cvGrid article2, .cvGrid section article2 {
+    padding-top: 20px;
+    width: 50%;
+    height: 80px;
+    color: aliceblue; }
+
+section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  section2 .compList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  section2 .empImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 500px; }
+    section2 .empImg img {
+      width: 100px;
+      border-radius: 80px;
+      border: 4px solid yellowgreen; }
+    section2 .empImg span {
+      padding-left: 20px;
+      color: yellow;
+      width: 400px;
+      font-size: 15px;
+      font-family: Shrikhand; }
+  section2 .company img {
+    width: 600px;
+    border-radius: 20px;
+    border: 2px solid chartreuse; }
+
+section3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  section3 .textCand {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding-top: 50px;
+    font-size: larger;
+    font-weight: bold;
+    color: yellow; }
+
+body {
+  background-color: black; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  color: #eef700;
+  padding-top: 300px; }
+  footer section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; }
+    footer section2 .line {
+      width: 500px;
+      height: 1px;
+      gap: 20px;
+      background-color: yellow; }
+    footer section2 .redPart {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      padding-top: 20px; }
+      footer section2 .redPart .redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #4a4845;
+        width: 100vw;
+        height: 250px;
+        gap: 20px; }
+        footer section2 .redPart .redes ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center; }
+          footer section2 .redPart .redes ul span {
+            width: 200px; }
+    footer section2 ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px; }
+      footer section2 ul img {
+        width: 30px; }
+      footer section2 ul li {
+        width: 200px;
+        list-style: none; }
+    footer section2 span {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      footer section2 span p {
+        padding-top: 10px;
+        width: 400px; }
+  footer .footText p {
+    width: 800px;
+    font-family: Shrikhand;
+    font-size: 12px; }
+
+.cvGrid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  width: 100vw;
+  height: 700px;
+  padding-top: 50px; }
+  .cvGrid .cvImg {
+    grid-column: 3 / 4;
+    grid-row: 3 / 5;
+    order: 2; }
+    .cvGrid .cvImg img {
+      width: 400px; }
+  .cvGrid h2 {
+    width: 400px;
+    font-weight: 30px;
+    color: yellowgreen;
+    grid-column: 4 / 8;
+    grid-row: 2 / 3;
+    order: 1; }
+  .cvGrid article, .cvGrid article2 {
+    width: 350px;
+    font-size: 20px;
+    color: yellowgreen;
+    padding-left: 40px;
+    grid-column: 4 / 8;
+    grid-row: 4 / 5;
+    order: 1; }
+  .cvGrid article2 {
+    grid-row: 6 / 7; }
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 700px; }
+  section .cvImg img {
+    width: 300px;
+    height: 400px; }
+  section .cvImg2 {
+    height: 600px; }
+    section .cvImg2 img {
+      width: 300px;
+      padding-top: 400px; }
+  section h3 {
+    width: 250px;
+    color: #eef700;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 15px; }
+  section .loadImag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px; }
+    section .loadImag button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 110px;
+      height: 60px;
+      background-color: yellow;
+      color: black;
+      border-radius: 40px;
+      margin: 20px; }
+      section .loadImag button input {
+        width: 80px; }
+  section ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    padding-top: 80px; }
+  section form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100px;
+    height: 30px; }
+  section label {
+    color: yellowgreen; }
+  section input {
+    background-color: #eef700; }
+  section .otherLab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 30px; }
+    section .otherLab input label placeholder {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+    section .otherLab span {
+      font-size: 24px;
+      padding-top: 40px;
+      width: 500px;
+      color: yellowgreen; }
+    section .otherLab .checkBox {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-top: 40px;
+      gap: 20px; }
+      section .otherLab .checkBox div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; }
+        section .otherLab .checkBox div img {
+          width: 300px;
+          border: 2px solid yellowgreen;
+          border-radius: 50px; }
+    section .otherLab .textSpace {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; }
+      section .otherLab .textSpace span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        width: 300px;
+        color: #eef700; }
+      section .otherLab .textSpace button2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 40px;
+        background-color: #2fb3ca;
+        color: black;
+        border-radius: 40px;
+        text-decoration: none; }
+      section .otherLab .textSpace input {
+        background-color: #eef700;
+        width: 300px;
+        height: 100px; }
+
+.navBar {
+  display: flex;
+  justify-content: row;
+  align-items: center;
+  background-color: #3f3232;
+  width: 100vw;
+  height: 50px; }
+  .navBar ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; }
+    .navBar ul a {
+      text-decoration: none;
+      color: black; }
+    .navBar ul button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      height: 40px;
+      background-color: yellow;
+      color: black;
+      border-radius: 40px;
+      font-family: Oxygen;
+      font-size: 12px; }
+    .navBar ul input {
+      background-color: yellow; }
+    .navBar ul label {
+      display: flex;
+      justify-content: row;
+      align-items: center;
+      width: 80px;
+      height: 50px;
+      color: #f2f2e4;
+      padding-left: 100px;
+      font-size: 1.125rem;
+      font-family: Oxygen; }
+
+.searchBar {
+  grid-column: 3 / 8;
+  grid-row: 7 / 8;
+  width: 800px;
+  height: 60px;
+  background-color: yellow;
+  border-radius: 50px; }
+  .searchBar ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; }
+    .searchBar ul div img {
+      width: 28px;
+      height: 35px; }
+    .searchBar ul input {
+      background-color: black;
+      color: yellow; }
+
+.card, .card2, .card3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 200px;
+  padding-top: 50px;
+  gap: 10px; }
+  .card .box, .card2 .box, .card3 .box {
+    width: 100px;
+    height: 100px;
+    background-image: url(../assets/img/faceicon.jpg);
+    background-size: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100%; }
+  .card .icon, .card2 .icon, .card3 .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .card .icon spam, .card2 .icon spam, .card3 .icon spam {
+    width: 12px; }
+  .card .count, .card2 .count, .card3 .count {
+    color: yellowgreen; }
+  .card .icon img, .card2 .icon img, .card3 .icon img {
+    width: 30px; }
+  .card .text, .card2 .text, .card3 .text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 300px;
+    height: 100px;
+    border-radius: 35px;
+    border: 2px solid #8bf01f; }
+    .card .text p, .card2 .text p, .card3 .text p {
+      width: 70%;
+      font-size: medium;
+      font-weight: bold;
+      color: #8bf01f; }
+
+.card2 .box, .card3 .box {
+  background-image: url(../assets/img/empIcon2.jpg); }
+
+.card2 .text, .card3 .text {
+  border: 2px solid #19bcee; }
+  .card2 .text p, .card3 .text p {
+    color: #19bcee; }
+
+.card3 .box {
+  background-image: url(../assets/img/faceicon3.jpg); }
+
+.card3 .text {
+  border: 2px solid #ee19bc; }
+  .card3 .text p {
+    color: #ee19bc; }
+
+.company img {
+  padding-top: 20px; }
+
+.cardComp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-color: 1px solid yellowgreen;
+  padding-top: 50px; }
+  .cardComp span {
+    width: 300px; }
+  .cardComp .compList {
+    padding-top: 20px; }
+    .cardComp .compList ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      height: 60px;
+      border: 2px solid yellowgreen;
+      border-radius: 30px;
+      gap: 25px;
+      list-style: none;
+      text-decoration: none; }
+      .cardComp .compList ul .like img {
+        width: 30px; }
+      .cardComp .compList ul li a {
+        all: unset;
+        color: yellow; }
+
+@media (max-width: 768px) {
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 768px; }
+    .navBar ul {
+      width: 768px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding-right: 100px; }
+      .navBar ul button {
+        width: 80px; }
+      .navBar ul label {
+        padding-left: 10px;
+        width: 50px; }
+      .navBar ul input {
+        width: 100px; }
+  .gridMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    padding-top: 200px; }
+    .gridMain .searchBar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 400px;
+      height: 40px; }
+      .gridMain .searchBar input {
+        width: 60px;
+        height: 15px; }
+      .gridMain .searchBar ul div img {
+        width: 18px;
+        height: 25px; }
+  footer {
+    width: 768px;
+    height: 100px; }
+    footer section2 .redPart .redes {
+      width: 100vw;
+      height: 300px; }
+      footer section2 .redPart .redes ul li {
+        width: 150px;
+        font-size: 12px; }
+    footer .footText {
+      width: 500px; }
+      footer .footText p {
+        font-size: 10   px; } }
+
+@media (max-width: 320px) {
+  .navBar {
+    height: 50px; }
+  main .gridMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-position-x: 15px;
+    background-position-y: center;
+    width: 800px;
+    padding-right: 50px;
+    background-size: 700px,400px; }
+    main .gridMain .searchBar {
+      width: 400px; }
+      main .gridMain .searchBar input {
+        width: 70px;
+        height: 15px; }
+  main section {
+    width: 750px; }
+    main section h1 {
+      width: 95vw; }
+    main section article, main section .cvGrid article2, .cvGrid main section article2 {
+      width: 80vw; }
+  main section2 {
+    width: 750px;
+    padding-top: 100px; }
+    main section2 .complist {
+      width: 750px; }
+  .redes {
+    width: 300px; }
+  footer section2 {
+    width: 100%; }
+    footer section2 .redPart {
+      width: 100%; }
+      footer section2 .redPart .redes {
+        width: 100%; } }

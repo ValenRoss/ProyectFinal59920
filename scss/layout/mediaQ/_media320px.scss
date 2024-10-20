@@ -1,0 +1,59 @@
+@media(max-width:320px){
+    .navBar{
+        height: 50px;
+    }
+main{
+    .gridMain{
+        @include flex3(row,center,center);
+        background-position-x: 15px;
+        background-position-y: center;
+        width: 800px;
+        padding-right: 50px;
+        background-size: 700px,400px;   
+        .searchBar{
+            width: 400px;
+            input{
+                width: 70px;
+                height: 15px;
+            }
+        }
+    }
+
+    section{
+        width: 750px;
+        h1{
+            width: 95vw;
+        }
+        article{
+            width: 80vw;
+        }
+    }
+    section2{
+        width: 750px;
+        padding-top: 100px;
+        .complist{
+            width: 750px;
+        }
+    }
+}
+    
+    .redes{
+        width: 300px;
+
+    }
+
+footer{
+    section2{
+        width: 100%;
+        .redPart{
+            width: 100%;
+            .redes{
+                width: 100%;
+            }
+        }      
+    }        
+}
+}
+
+
+
