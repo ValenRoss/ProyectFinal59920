@@ -1,6 +1,6 @@
 .cvGrid{
-    @include grid2(repeat(8,1fr),repeat(10,1fr),100vw,700px);
-    padding-top: 50px;
+    @include flex3(column,center,center);
+    padding-top: 100px;
     .cvImg{
         grid-column: 3 / 4;
         grid-row: 3 / 5;
@@ -10,131 +10,120 @@
         }
     }
     h2{
-        width: 400px;
-        font-weight: 30px;
-        color: yellowgreen;
-        grid-column: 4 / 8;
-        grid-row: 2 / 3;
-        order: 1;
+        color: yellow;
+        padding-top: 20px;
     }
     article{
-        width: 350px;
-        font-size: 20px;
-        color: yellowgreen;
-        padding-left: 40px;
-        grid-column: 4 / 8;
-        grid-row: 4 / 5;
-        order: 1;
-    }
-    article2{
-        @extend article;
-        grid-row: 6 / 7;
+        padding-top: 20px;
+        color: yellow;
+        width: 10vw;    
     }
 }
-
-    section{
-        @include flex3(column,center,center);   
-        padding-top: 700px;
-        .cvImg{
-            img{
-            width: 300px;
-            height: 400px;
-            }   
-
+.cvTips{
+    padding-top: 50px;
+    @include flex3(row,center,center); 
+    }
+.profileCv{
+    @include flex3(column,center,center);
+    .profile{
+        img{
+            width: 15vw;
+    }
         }
-        .cvImg2{
-            height: 600px;
-            img{
-                width: 300px; 
-                padding-top: 400px;
-            }                                
-        }          
-        h3{ 
-            width: 250px;
-            color: map-get($colorSitio, colortext1);
-            padding-top: 40px;
-            padding-bottom: 40px;
-            font-size: 15px;
-        }
-        .loadImag{
-            @include flex3(column,center,center);
-            width: 100%;
-            height: 200px;
-            button{
-                @include button5(110px,60px,yellow,black,40px);
-                margin: 20px;
-            input{
-                width: 80px;
-            }
-            }
-        }
-        
-        ul{
-            @include flex3(row,center,center);
-            width: 800px;
-            padding-top: 80px;      
-        }
-        form{
-            @include flex4(row,center,center,20px);
-            width: 100px;
-            height: 30px;
-        }
-        label{
-            color: yellowgreen;
-        }
-        input{
-            background-color: map-get($colorSitio, colortext1);              
-        }
-        .otherLab{
-            @include flex4(column,center,center,10px);
-            padding-top: 30px;
-            input label placeholder{
-                width: 100%;
-                @include flex3(row,center,center);
-            }
-                span{
-                    font-size: 24px;
-                    padding-top: 40px;
-                    width: 500px;
-                    color: yellowgreen;
-                }
-            
-        .checkBox{
-            @include flex3(row,center,center);
-            padding-top: 40px;
-            gap: 20px;
-            div{
-                @include flex3(column,center,center);
-                gap: 20px;
-                img{
-                    width: 300px;
-                    border: 2px solid yellowgreen;
-                    border-radius: 50px;
-                }
-            }
-        }      
-        .textSpace{
-            width: 100%;
-            @include flex3(column,center,center); 
-            gap: 20px;  
-            span{
-                @include flex3(column,center,center);
-                padding-top: 20px;
-                width: 300px;
-                color: map-get($colorSitio, colortext1);               
-            }
-            button2{
-                @include button5(80px,40px,rgb(47, 179, 202),black,40px);
-                text-decoration: none;
-            }        
-            input{
-                background-color: map-get($colorSitio, colortext1);
-                width: 300px;
-                height: 100px;
-            }
-        }   
+    article2{
+        width: 20vw;
+        color: yellowgreen;
+    }
+    label{
+        all: unset;
+        width: 50px;
+    }
+    .fileUp{
+        @include flex3(column,center,center);
+        padding: 25px;
+        img{
+            width: 50px;
         }
     }
+} 
+    
+        .formCv{
+            @include flex3(row,center,center);
+            gap: 12px;
+            label{
+                color: yellowgreen;
+            }
+            input{
+                width: 90px;
+                background-color: yellowgreen;
+            }
+                             
+            }
+        .checkList{
+            @extend .formCv;
+            @include flex3(column,center,center);
+            gap: 10px;
+            input{
+                width: 120px;             
+            }
+            .skills{    
+                @include flex3(column,center,center);
+                width: 400px;
+                height: 250px;
+                border: 2px solid yellowgreen;
+                border-radius: 20px;
+                .checkImg{
+                    img{            
+                    width: 150px;
+                    }
+                }
+                h3{
+                    color: yellowgreen; 
+                }
+            }
+            .check{
+                @include flex3(row,center,center);
+                padding-top: 10px;
+                width: 350px;            
+            }
+            h4{
+                @extend h3;
+            }
+        
+            .idiomas{
+                @extend .skills;
+                height: 400px;
+                .talkGirl{
+                    @extend .checkImg;
+                    img{               
+                    border-radius: 100px;
+                    }                  
+                }
+                h5{
+                    padding-top: 20px;
+                    @extend h4;
+                }
+            }
+            .contact{
+                @include flex3(column,center,center);
+            }
+            
+        }
+            
+       
+            
+        
+    
+    
+     
+    
+            
+
+    
+
+    
+    
+
 
          
     

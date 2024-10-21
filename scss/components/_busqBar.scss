@@ -1,8 +1,6 @@
 
 .searchBar{
-    grid-column: 3 / 8;
-    grid-row: 7 / 8;
-    @include w-h(800px,60px);
+    @include w-h(700px,150px);
     background-color: yellow;
     border-radius: 50px;
         ul{

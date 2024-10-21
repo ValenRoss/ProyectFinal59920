@@ -18,17 +18,17 @@ header {
 .gridMain {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: 700px;
   background-image: url(../assets/img/background.png);
   background-repeat: no-repeat;
-  background-size: 95vw,70vh;
+  background-size: 95vw,200px;
   background-position-x: center;
-  background-position-y: 100px;
-  padding-top: 250px; }
+  background-position-y: 100px; }
   .gridMain .searchBar {
+    margin-top: 500px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -40,8 +40,7 @@ section {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100px;
-  padding-top: 30px; }
+  height: 100px; }
   section h1 {
     width: 800px;
     display: flex;
@@ -49,7 +48,7 @@ section {
     justify-content: center;
     align-items: center;
     color: #b9f331; }
-  section article, section .cvGrid article2, .cvGrid section article2 {
+  section article {
     padding-top: 20px;
     width: 50%;
     height: 80px;
@@ -106,6 +105,7 @@ body {
   background-color: black; }
 
 footer {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,7 +113,7 @@ footer {
   width: 100vw;
   height: 200px;
   color: #eef700;
-  padding-top: 300px; }
+  padding-top: 200px; }
   footer section2 {
     display: flex;
     flex-direction: row;
@@ -174,12 +174,11 @@ footer {
     font-size: 12px; }
 
 .cvGrid {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  width: 100vw;
-  height: 700px;
-  padding-top: 50px; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px; }
   .cvGrid .cvImg {
     grid-column: 3 / 4;
     grid-row: 3 / 5;
@@ -187,145 +186,93 @@ footer {
     .cvGrid .cvImg img {
       width: 400px; }
   .cvGrid h2 {
-    width: 400px;
-    font-weight: 30px;
-    color: yellowgreen;
-    grid-column: 4 / 8;
-    grid-row: 2 / 3;
-    order: 1; }
-  .cvGrid article, .cvGrid article2 {
-    width: 350px;
-    font-size: 20px;
-    color: yellowgreen;
-    padding-left: 40px;
-    grid-column: 4 / 8;
-    grid-row: 4 / 5;
-    order: 1; }
-  .cvGrid article2 {
-    grid-row: 6 / 7; }
+    color: yellow;
+    padding-top: 20px; }
+  .cvGrid article {
+    padding-top: 20px;
+    color: yellow;
+    width: 10vw; }
 
-section {
+.cvTips {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.profileCv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .profileCv .profile img {
+    width: 15vw; }
+  .profileCv article2 {
+    width: 20vw;
+    color: yellowgreen; }
+  .profileCv label {
+    all: unset;
+    width: 50px; }
+  .profileCv .fileUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px; }
+    .profileCv .fileUp img {
+      width: 50px; }
+
+.formCv, .checkList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px; }
+  .formCv label, .checkList label {
+    color: yellowgreen; }
+  .formCv input, .checkList input {
+    width: 90px;
+    background-color: yellowgreen; }
+
+.checkList {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 700px; }
-  section .cvImg img {
-    width: 300px;
-    height: 400px; }
-  section .cvImg2 {
-    height: 600px; }
-    section .cvImg2 img {
-      width: 300px;
-      padding-top: 400px; }
-  section h3 {
-    width: 250px;
-    color: #eef700;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    font-size: 15px; }
-  section .loadImag {
+  gap: 10px; }
+  .checkList input {
+    width: 120px; }
+  .checkList .skills, .checkList .idiomas {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 200px; }
-    section .loadImag button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 110px;
-      height: 60px;
-      background-color: yellow;
-      color: black;
-      border-radius: 40px;
-      margin: 20px; }
-      section .loadImag button input {
-        width: 80px; }
-  section ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 800px;
-    padding-top: 80px; }
-  section form {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100px;
-    height: 30px; }
-  section label {
-    color: yellowgreen; }
-  section input {
-    background-color: #eef700; }
-  section .otherLab {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding-top: 30px; }
-    section .otherLab input label placeholder {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center; }
-    section .otherLab span {
-      font-size: 24px;
-      padding-top: 40px;
-      width: 500px;
+    width: 400px;
+    height: 250px;
+    border: 2px solid yellowgreen;
+    border-radius: 20px; }
+    .checkList .skills .checkImg img, .checkList .idiomas .checkImg img, .checkList .idiomas .talkGirl img {
+      width: 150px; }
+    .checkList .skills h3, .checkList .idiomas h3, .checkList .skills h4, .checkList .idiomas h4, .checkList .idiomas h5 {
       color: yellowgreen; }
-    section .otherLab .checkBox {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      padding-top: 40px;
-      gap: 20px; }
-      section .otherLab .checkBox div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px; }
-        section .otherLab .checkBox div img {
-          width: 300px;
-          border: 2px solid yellowgreen;
-          border-radius: 50px; }
-    section .otherLab .textSpace {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 20px; }
-      section .otherLab .textSpace span {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 20px;
-        width: 300px;
-        color: #eef700; }
-      section .otherLab .textSpace button2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80px;
-        height: 40px;
-        background-color: #2fb3ca;
-        color: black;
-        border-radius: 40px;
-        text-decoration: none; }
-      section .otherLab .textSpace input {
-        background-color: #eef700;
-        width: 300px;
-        height: 100px; }
+  .checkList .check {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    width: 350px; }
+  .checkList .idiomas {
+    height: 400px; }
+    .checkList .idiomas .talkGirl img {
+      border-radius: 100px; }
+    .checkList .idiomas h5 {
+      padding-top: 20px; }
+  .checkList .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
 
 .navBar {
   display: flex;
@@ -370,10 +317,8 @@ section {
       font-family: Oxygen; }
 
 .searchBar {
-  grid-column: 3 / 8;
-  grid-row: 7 / 8;
-  width: 800px;
-  height: 60px;
+  width: 700px;
+  height: 150px;
   background-color: yellow;
   border-radius: 50px; }
   .searchBar ul {
@@ -561,7 +506,7 @@ section {
     width: 750px; }
     main section h1 {
       width: 95vw; }
-    main section article, main section .cvGrid article2, .cvGrid main section article2 {
+    main section article {
       width: 80vw; }
   main section2 {
     width: 750px;

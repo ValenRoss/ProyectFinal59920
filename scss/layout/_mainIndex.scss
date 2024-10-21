@@ -1,15 +1,15 @@
     
         .gridMain{
-            @include flex3(column,center,center);
-            width: 100vw;
-            height: 100vh;
+            @include flex3(column,space-around,center);
+            width: 100vw;   
+            height: 700px;
             background-image: url(../assets/img/background.png);
             background-repeat: no-repeat;
-            background-size: 95vw,70vh;
+            background-size: 95vw,200px;
             background-position-x: center;
-            background-position-y: 100px;
-            padding-top: 250px;
+            background-position-y: 100px;   
             .searchBar{
+                margin-top: 500px;
                 @include flex3(row,center,center);
             }
         }
@@ -17,7 +17,6 @@
             section{
                 @include flex3(column,center,center);
                 @include w-h(100vw,100px);
-                padding-top: 30px;
                 h1{
                     width: 800px;
                     @include flex3(grow,center,center);
