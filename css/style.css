@@ -274,6 +274,40 @@ footer {
     justify-content: center;
     align-items: center; }
 
+.ofertGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px; }
+  .ofertGrid h5 {
+    font-size: 25px;
+    color: yellowgreen;
+    width: 800px;
+    padding-bottom: 10px; }
+  .ofertGrid .jobImg img {
+    width: 600px;
+    border-radius: 200px; }
+  .ofertGrid span {
+    color: yellowgreen;
+    font-size: 25px; }
+  .ofertGrid .topJob {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    gap: 10px; }
+    .ofertGrid .topJob .star {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+    .ofertGrid .topJob div {
+      color: yellowgreen; }
+      .ofertGrid .topJob div img {
+        width: 50px; }
+
 .navBar {
   display: flex;
   justify-content: row;
@@ -484,6 +518,23 @@ footer {
       footer .footText p {
         font-size: 10   px; } }
 
+.jobCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 150px;
+  height: 150px; }
+  .jobCard .preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; }
+    .jobCard .preview .jobMini Img {
+      width: 120px; }
+
 @media (max-width: 320px) {
   .navBar {
     height: 50px; }
@@ -521,3 +572,7 @@ footer {
       width: 100%; }
       footer section2 .redPart .redes {
         width: 100%; } }
+
+@container card (max-width: 500px) {
+  precio {
+    display: none; } }

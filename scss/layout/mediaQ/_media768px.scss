@@ -65,6 +65,22 @@
             }
     }
 }
+.jobCard{
+    @include flex3(row,center,center);
+    gap: 10px;
+    width: 150px;
+    height: 150px;
+        .preview{
+            @include flex3(column,center,center);
+            gap: 10px;
+            .jobMini{
+                Img{
+                width: 120px;
+            }
+        }
+        }
+
+}
 
 
 
