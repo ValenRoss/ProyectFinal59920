@@ -279,6 +279,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
   padding-top: 80px; }
   .ofertGrid h5 {
     font-size: 25px;
@@ -288,25 +289,6 @@ footer {
   .ofertGrid .jobImg img {
     width: 600px;
     border-radius: 200px; }
-  .ofertGrid span {
-    color: yellowgreen;
-    font-size: 25px; }
-  .ofertGrid .topJob {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    gap: 10px; }
-    .ofertGrid .topJob .star {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center; }
-    .ofertGrid .topJob div {
-      color: yellowgreen; }
-      .ofertGrid .topJob div img {
-        width: 50px; }
 
 .navBar {
   display: flex;
@@ -461,6 +443,49 @@ footer {
       .cardComp .compList ul li a {
         all: unset;
         color: yellow; }
+
+.topJob {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: blueviolet;
+  border-radius: 40px;
+  border: 2px solid yellow;
+  width: 550px;
+  height: 70px; }
+  .topJob .number {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px; }
+    .topJob .number .circle {
+      background-color: #232346;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px; }
+    .topJob .number span {
+      font-size: 40px;
+      padding-top: 50px;
+      color: aliceblue;
+      padding-left: 15px;
+      border: 20px; }
+  .topJob .star {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .topJob div img {
+    width: 50px; }
+  .topJob .cargo {
+    font-size: 20px;
+    color: aliceblue; }
+  .topJob .rate {
+    font-size: 20px;
+    color: antiquewhite; }
 
 @media (max-width: 768px) {
   .navBar {

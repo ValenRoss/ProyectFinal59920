@@ -1,5 +1,6 @@
 .ofertGrid{
     @include flex3(column,center,center);
+    width: 100vw;
     padding-top: 80px;
     h5{
         font-size: 25px;
@@ -12,36 +13,13 @@
             width: 600px;
             border-radius: 200px;
         }
-
-    }
-    span{
-        color: yellowgreen;
-        font-size: 25px;
-    }
-    .topJob{
-        @include flex3(row,center,center);
-        padding-top: 50px;
-        .star{
-            @include flex3(row,center,center);
-        }
-        div{
-            color: yellowgreen;
-            img{
-                width: 50px;
-            }
-        }
-        gap: 10px;
-
-    }
+    
+    
+}
+}
     
 
 
-
-
-
-
-
-}
-        
+      
 
     
