@@ -124,7 +124,7 @@
         span{
                 font-size: 40px;
                 padding-top: 50px;
-                color: aliceblue;
+                color: rgb(197, 178, 3);
                 padding-left: 15px;
                 border: 20px;
         }
@@ -146,10 +146,80 @@
     }
     .rate{
         font-size: 20px;
-        color: antiquewhite;
+        color: rgb(199, 233, 7);
     }
+}
+.botones{
+    @include flex3(row,center,center);
+    gap: 10px;
+
+   button{
+        all: unset;
+        @include flex3(column,center,center);
+        margin-top: 20px;
+        width: 80px;
+        height: 40px;
+        background-color:yellow;
+        border-radius: 70px;
+        }
+}
+.topJob1{
+    @extend .topJob;
+    margin-top: 50px;
     
+}
+.topJob2{
+    @extend .topJob1;
+}
+.banOfer1{
+    @include flex3(grow,center,center);
+    width: 700px;
+    height: 150px;
+    padding-top: 100px;
+    
+    .part1{
+        width: 150px;
+        aspect-ratio: 1/1;
+        img{
+            width: 150px;
+            
+        }
     }
+    .part2{
+        img{
+            width: 550px;
+            height: 150px;
+        }
+    }
+}
+.bannAlign{
+    @include flex3(column,center,center);
+    gap: 20px;
+
+    .bann2{
+    @include flex3(column,center,center);
+    border: 2px solid blue;
+    padding: 10px;
+    border-radius: 20px;
+    button{
+        width: 80px;
+        aspect-ratio: 2/1;
+        background-color: rgb(141, 226, 43);
+        border-radius: 30px;
+        color: rgb(29, 42, 54);
+    }
+    .banOfer1{
+        @include flex3(row,center,center);
+        width: 700px;
+        height: 150px;   
+    }
+}
+}
+
+
+
+    
+
    
 
 

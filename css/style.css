@@ -290,6 +290,29 @@ footer {
     width: 600px;
     border-radius: 200px; }
 
+.gridSection2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  width: 100vw; }
+  .gridSection2 span {
+    font-size: 30px;
+    color: yellowgreen; }
+  .gridSection2 span {
+    font-size: 18px;
+    width: 700px;
+    padding-top: 60px;
+    color: #19bcee; }
+  .gridSection2 .botonPag {
+    padding-top: 10px; }
+    .gridSection2 .botonPag button {
+      width: 25px;
+      aspect-ratio: 1/2;
+      background-color: blue;
+      color: aliceblue; }
+
 .navBar {
   display: flex;
   justify-content: row;
@@ -444,7 +467,7 @@ footer {
         all: unset;
         color: yellow; }
 
-.topJob {
+.topJob, .topJob1, .topJob2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -455,37 +478,103 @@ footer {
   border: 2px solid yellow;
   width: 550px;
   height: 70px; }
-  .topJob .number {
+  .topJob .number, .topJob1 .number, .topJob2 .number {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 50px;
     height: 50px; }
-    .topJob .number .circle {
+    .topJob .number .circle, .topJob1 .number .circle, .topJob2 .number .circle {
       background-color: #232346;
       width: 50px;
       height: 50px;
       border-radius: 50px; }
-    .topJob .number span {
+    .topJob .number span, .topJob1 .number span, .topJob2 .number span {
       font-size: 40px;
       padding-top: 50px;
-      color: aliceblue;
+      color: #c5b203;
       padding-left: 15px;
       border: 20px; }
-  .topJob .star {
+  .topJob .star, .topJob1 .star, .topJob2 .star {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center; }
-  .topJob div img {
+  .topJob div img, .topJob1 div img, .topJob2 div img {
     width: 50px; }
-  .topJob .cargo {
+  .topJob .cargo, .topJob1 .cargo, .topJob2 .cargo {
     font-size: 20px;
     color: aliceblue; }
-  .topJob .rate {
+  .topJob .rate, .topJob1 .rate, .topJob2 .rate {
     font-size: 20px;
-    color: antiquewhite; }
+    color: #c7e907; }
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; }
+  .botones button {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 80px;
+    height: 40px;
+    background-color: yellow;
+    border-radius: 70px; }
+
+.topJob1, .topJob2 {
+  margin-top: 50px; }
+
+.banOfer1 {
+  display: flex;
+  flex-direction: grow;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 150px;
+  padding-top: 100px; }
+  .banOfer1 .part1 {
+    width: 150px;
+    aspect-ratio: 1/1; }
+    .banOfer1 .part1 img {
+      width: 150px; }
+  .banOfer1 .part2 img {
+    width: 550px;
+    height: 150px; }
+
+.bannAlign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; }
+  .bannAlign .bann2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+    padding: 10px;
+    border-radius: 20px; }
+    .bannAlign .bann2 button {
+      width: 80px;
+      aspect-ratio: 2/1;
+      background-color: #8de22b;
+      border-radius: 30px;
+      color: #1d2a36; }
+    .bannAlign .bann2 .banOfer1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 700px;
+      height: 150px; }
 
 @media (max-width: 768px) {
   .navBar {
@@ -596,7 +685,18 @@ footer {
     footer section2 .redPart {
       width: 100%; }
       footer section2 .redPart .redes {
-        width: 100%; } }
+        width: 100%; }
+  .ofertGrid {
+    width: 750px; }
+    .ofertGrid h5 {
+      width: 700px; }
+  .gridSection2 {
+    width: 740px;
+    padding-top: 50px; }
+    .gridSection2 .banOfer1 {
+      width: 400px; }
+    .gridSection2 .bannAlign {
+      width: 700px; } }
 
 @container card (max-width: 500px) {
   precio {

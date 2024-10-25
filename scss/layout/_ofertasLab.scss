@@ -13,11 +13,34 @@
             width: 600px;
             border-radius: 200px;
         }
-    
-    
+      
 }
 }
-    
+.gridSection2{
+    @include flex3(column,center,center);
+    padding-top: 100px;
+    width: 100vw;
+    span{
+        font-size: 30px;
+        color: yellowgreen;
+    }
+    span{
+        font-size: 18px;
+        width: 700px;
+        padding-top: 60px;
+        color: map-get($colorSitio, colorbox2);
+    }
+    .botonPag{
+        padding-top: 10px;
+        button{    
+        width: 25px;
+        aspect-ratio: 1/2;
+        background-color: blue;
+        color: aliceblue;
+        }
+    }
+}
+ 
 
 
       

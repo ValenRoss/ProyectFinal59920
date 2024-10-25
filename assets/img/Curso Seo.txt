@@ -1,0 +1,279 @@
+00:24:33	Federico Pauza:	Las variables van en el mismo scss que los maps ?
+00:25:27	Julio Moreno:	profe consulta, los hover pueden hacerse con variables por ejemplo ? en el caso de que varios elementos ocupen el mismo hover ?
+00:25:50	Brian Gonzales Vidaurre:	se usa  otro _maps.scss para maps y _variables.scss
+00:26:27	Federico Pauza:	Replying to "Las variables van en..."
+
+Gracias!!
+00:26:37	[Tutor] Germán Geredus:	Replying to "profe consulta, los ..."
+
+me suena mas a aplicar una clase
+00:26:48	[Tutor] Germán Geredus:	Replying to "profe consulta, los ..."
+
+para los elementos que comparten los mismos estilos
+00:27:21	Julio Moreno:	Replying to "profe consulta, los ..."
+
+gracias profe
+00:28:01	Facundo López Ordoqui:	Reacted to "{191C8562-6A3C-4174-BBBF-2BCEFA503F4C}.png" with 👍
+00:29:15	Profesor Coderhouse:	https://animista.net/
+00:29:41	Carlos Villegas:	No hay problema de copyright por las animaciones no?
+00:29:59	[Tutor] Germán Geredus:	Replying to "No hay problema de c..."
+
+nop
+00:30:18	Carlos Villegas:	Replying to "No hay problema de c..."
+
+Ah bien, gracias
+00:30:22	Julio Moreno:	aquí existen animaciones como las de los círculos de carga ?
+00:32:18	Carlos Villegas:	Se me cerro el zoom, sorry
+00:39:27	Monica Forrisi:	cómo se abre esa ventana en vivo desde visual studio??
+00:39:58	Julio Moreno:	Replying to "cómo se abre esa ven..."
+
+creo que es un plugin
+00:41:11	Facundo López Ordoqui:	No no
+00:41:13	Carlos Villegas:	no
+00:41:35	Julio Moreno:	eso creo que lo vieron en after
+00:41:37	Julio Moreno:	o no
+00:42:04	Profesor Coderhouse:	Name: Live ServerId: ritwickdey.LiveServerDescription: Launch a development local Server with live reload feature for static & dynamic pagesVersion: 5.7.9Publisher: Ritwick DeyVS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+00:42:38	Carlos Villegas:	y se te olvido. ah re
+00:43:21	Federico Pauza:	Si perfecto
+00:43:25	Carlos Villegas:	todo bien
+00:43:41	Julio Moreno:	todo ok
+00:43:48	Federico Pauza:	Solo un poco, si no sos nuestro profe en javascript
+00:44:14	Facundo López Ordoqui:	Reacted to "Solo un poco, si no ..." with 👆
+00:48:41	Julio Moreno:	un hover solo funciona en desktop
+00:49:11	Julio Moreno:	a menos que le conectes un mouse al celu hahahaha
+00:49:19	Facundo López Ordoqui:	Reacted to "a menos que le conec..." with 😂
+00:50:25	Facundo López Ordoqui:	dale
+00:53:57	Julio Moreno:	si todo claro
+00:54:25	Brian Gonzales Vidaurre:	funciona en imágenes también?
+00:57:25	Julio Moreno:	y puede hacerse esa animación mas suave ?
+00:57:35	Julio Moreno:	y no tan de golpe
+00:58:21	Facundo López Ordoqui:	Replying to "y no tan de golpe"
+
+Creo que hay algo que se llama Transition. Con eso podrias regular la velocidad de la animacion
+00:58:29	Facundo López Ordoqui:	Replying to "y no tan de golpe"
+
+"transition: transform 0.3s ease, background-color 0.3s ease;"
+00:58:38	Julio Moreno:	Reacted to ""transition: transfo..." with 👍
+00:58:41	Julio Moreno:	Reacted to "Creo que hay algo qu..." with 👍
+00:59:27	Facundo López Ordoqui:	Si is
+00:59:28	Federico Pauza:	siis
+00:59:36	Facundo López Ordoqui:	Reacted to "siis" with 😂
+00:59:39	Federico Pauza:	Creo que si
+00:59:42	Julio Moreno:	no
+01:07:54	Julio Moreno:	ah es el sesgado
+01:08:49	Facundo López Ordoqui:	si si
+01:09:23	Federico Pauza:	Replying to "si si"
+
+is is
+01:09:30	Facundo López Ordoqui:	Reacted to "is is" with 😂
+01:10:34	Facundo López Ordoqui:	Transition creo que es
+01:12:32	Julio Moreno:	si
+01:12:36	Federico Pauza:	nop
+01:12:37	Ana Guerreiro:	no
+01:12:41	Facundo López Ordoqui:	No no
+01:13:03	Julio Moreno:	es la curva que se usa para entender que tan rápido inicia la animación y que tan rápido termina
+01:13:17	Brian Gonzales Vidaurre:	Reacted to "es la curva que se u..." with 👍
+01:13:23	Facundo López Ordoqui:	Reacted to "es la curva que se u..." with 👍
+01:13:46	Profesor Coderhouse:	https://cubic-bezier.com/#.17,.67,.83,.67
+01:15:27	Julio Moreno:	el ease-in-out es una buena animacion
+01:17:15	Julio Moreno:	todo claro
+01:17:56	Federico Pauza:	Se puede hacer de manera que sea infinito el moviendo? O sea que mientra el cursor este encima siga la animación? O que se haga automáticamente sin que pase el cursor por encima?
+01:20:41	Julio Moreno:	🤯
+01:22:09	Federico Pauza:	dale
+01:22:14	Julio Moreno:	todo claro
+01:23:14	Profesor Coderhouse:	https://uiverse.io/
+01:23:51	Julio Moreno:	ufff 🤌
+01:24:58	Yamil Moncau:	dalee
+01:24:59	Ana Guerreiro:	dale
+01:24:59	Federico Pauza:	Perfecto
+01:25:02	Julio Moreno:	156?
+01:25:14	[Tutor] Germán Geredus:	12:56
+01:25:15	Dario Sosa:	12:56
+01:25:21	Julio Moreno:	Reacted to "12:56" with 👍
+01:37:25	Federico Pauza:	Acá tamos
+01:37:49	Julio Moreno:	listo
+01:38:05	Facundo López Ordoqui:	Tamos ready
+01:38:16	Yamil Moncau:	estoy
+01:39:41	Yamil Moncau:	lo podes hacer esperar x tiempo de la carga de inicio para que arranque?
+01:40:13	Yamil Moncau:	perfecto
+01:42:28	Federico Pauza:	dale
+01:42:42	Yamil Moncau:	y se delay también es cuando termina y vuelve a arrancar la misma animación?
+01:46:38	Julio Moreno:	porque en el 0% comienza en 10deg
+01:48:29	Facundo López Ordoqui:	si si
+01:48:30	Julio Moreno:	si todo claro
+01:52:01	Julio Moreno:	genial
+01:52:26	Yamil Moncau:	se puede cambiar el nombre de la clase
+01:52:26	Julio Moreno:	podemos ver un ejemplo con otra animación ?
+01:52:28	Yamil Moncau:	de sccss
+01:52:41	Federico Pauza:	En el ambiente profesional se usan mas las librerías? o lo hace el mismo frontend?
+01:52:53	Yamil Moncau:	perfecto
+01:53:49	Julio Moreno:	Replying to "En el ambiente profe..."
+
+creo que si tenemos la herramienta seria mejor usarla, si estas sacando un trabajo con un deadline muy corto es mejor usarlo. Ahora si tiene mucho tiempo para hacer el proyecto mejor date el lujo de hacerlo desde cero pienso yo
+01:54:26	Federico Pauza:	Replying to "En el ambiente profe..."
+
+Si eso es verdad, creo que lo primero es aprenderlo hacer bien uno mismo
+01:55:15	Yamil Moncau:	un degrade
+01:55:24	Julio Moreno:	Reacted to "un degrade" with 👍
+01:55:59	[Tutor] Germán Geredus:	Replying to "En el ambiente profe..."
+
+exacto, las herramientas nos ahorran un montón de tiempo, pero es importante, sobre todo en la etapa en que se encuentran, es que aprendan como funciona, para, mas allá de incorporar una librería, sepan que hace por detrás, y puedan personalizar aquellos elementos que incorporen
+01:56:16	Federico Pauza:	Reacted to "exacto, las herramie..." with ❤️
+01:56:35	Yamil Moncau:	sii
+01:56:36	Julio Moreno:	claro seria hacia arriba y la derecha
+01:57:08	Federico Pauza:	Replying to "En el ambiente profe..."
+
+Claro, mi idea es poder trabajar de esto, me encanta, pero primero quiero al menos tratar de hacer las cosas por mi cuenta, y si es algo muy complejo bueno. Ahí si busco en la librería, pero quiero saberlo hacer
+01:57:49	Profesor Coderhouse:	https://mycolor.space/
+01:58:04	Yamil Moncau:	jajaja ya esta todo creado
+01:58:33	Julio Moreno:	profe y esos mismos degradados nostros podemos aplicárselo sobre un background-image ?
+01:58:52	[Tutor] Germán Geredus:	Reacted to "Claro, mi idea es po..." with 💪
+01:59:05	Julio Moreno:	y en el caso que dentro de ese background-image tengamos un url ?
+02:01:07	Federico Pauza:	ME COSTO UN MONTON SACAR ESO jajajaj lo sabia a GitHub y no me aparecía los background omg
+02:01:13	Federico Pauza:	Lo estaba odiando ya jajajaja
+02:01:58	Federico Pauza:	No tendría que tener una transparencia?
+02:02:48	Yamil Moncau:	sii
+02:02:49	Brian Gonzales Vidaurre:	profe a la animación que hizo a la imagen de fanta, se le puede poner un hover con transition o no le hace efecto por la animacion?
+02:04:11	Brian Gonzales Vidaurre:	dale gracias
+02:04:28	Federico Pauza:	Si todo perfecto
+02:05:34	Facundo López Ordoqui:	si
+02:07:47	Yamil Moncau:	te pide un pago jaaj
+02:08:00	Valentino Rossi:	Reacted to "te pide un pago jaaj" with 😂
+02:08:08	Valentino Rossi:	solo 1,99us
+02:08:10	Valentino Rossi:	jaja
+02:08:10	Julio Moreno:	y un sacrifio de tu alma hahaa
+02:08:17	Yamil Moncau:	Reacted to "jaja" with 😂
+02:08:27	Valentino Rossi:	esperemos no rompa todo como boot kjaj
+02:09:13	Cecilia Lozano:	quedó mal escrito animated
+02:09:15	Facundo López Ordoqui:	Porque escribió mal Animated
+02:09:38	Federico Pauza:	Será porque esta por debajo de cls?
+02:09:40	Federico Pauza:	css
+02:09:45	Brian Gonzales Vidaurre:	los links se pegan siempre por debajo del css no?
+02:09:46	Julio Moreno:	bueno la ignoramos entonces
+02:09:46	Julio Moreno:	hahahaha
+02:09:55	Julio Moreno:	usamos solo animista haha
+02:10:23	Federico Pauza:	Tiene el skew aplicado el h1
+02:12:15	Julio Moreno:	ese esta bueno
+02:12:27	Facundo López Ordoqui:	Si
+02:12:33	Yamil Moncau:	sii
+02:12:59	Facundo López Ordoqui:	Bastante bien
+02:13:02	Julio Moreno:	esta super entrete
+02:13:02	Yamil Moncau:	no muy buenaa
+02:13:13	Yamil Moncau:	sii
+02:13:14	Sebastian Moran:	si
+02:13:17	Ana Guerreiro:	Dale
+02:13:19	Julio Moreno:	vale
+02:13:25	Yamil Moncau:	oki
+02:13:27	Facundo López Ordoqui:	:O
+02:14:03	Federico Pauza:	dale
+02:14:04	Facundo López Ordoqui:	Dale
+02:14:09	[Tutor] Germán Geredus:	14:10 regresamos
+02:55:39	Julio Moreno:	search engine optimization
+02:55:42	Federico Pauza:	Si pero no me acuerdo que era
+02:56:45	Ignacio Platero:	eee yo hice ese de la utn ba
+03:08:56	Yamil Moncau:	serian ítems o puntos sueltos
+03:09:03	Julio Moreno:	todo claro
+03:09:03	Yamil Moncau:	no oraciones?
+03:09:42	Yamil Moncau:	En el index
+03:10:14	Yamil Moncau:	ah perfecto
+03:12:49	Yamil Moncau:	ferrum jeje
+03:12:59	Federico Pauza:	si
+03:13:00	Julio Moreno:	si claro
+03:17:53	Yamil Moncau:	las keywords son infinitas? o hay un limite?
+03:20:43	Julio Moreno:	si
+03:20:47	Carlos Villegas:	Google adds?
+03:20:49	Carlos Villegas:	si
+03:24:49	Julio Moreno:	o la sección de nosotros
+03:24:55	Yamil Moncau:	el carrito
+03:25:07	Yamil Moncau:	claro
+03:25:11	Yamil Moncau:	cunado va cargandolo
+03:25:18	Yamil Moncau:	que no se muestre
+03:25:21	Yamil Moncau:	claro
+03:27:39	Federico Pauza:	Enlaces de wpp también seria follow?
+03:27:48	Julio Moreno:	y como hacemos para que no muestre una pagina en especifico ?
+03:28:09	Julio Moreno:	a claro serian todas aquellas que no se llamen index.html pro ejemplo
+03:28:46	Yamil Moncau:	si es no index le pones igual keywords?
+03:30:02	Carlos Villegas:	Profe me tengo que retirar ahora a las 3, no hay problema?
+03:31:14	Julio Moreno:	si un poco, es mas o menos enredado pero si
+03:32:56	Julio Moreno:	vale perfecto
+03:32:59	Federico Pauza:	Si se entiende
+03:33:06	Cecilia Lozano:	entendido
+03:33:39	Yamil Moncau:	siii
+03:35:07	Federico Pauza:	sitios fake anotándoos eso
+03:35:09	Federico Pauza:	jajjja
+03:39:35	Profesor Coderhouse:	https://freecodetools.org/ogp/
+03:39:39	Julio Moreno:	este también debe ir en el proyecto ?
+03:40:42	Carlos Villegas:	tengo que salir, tengan un buen fin de semana
+03:43:59	Julio Moreno:	profe los favicon también son parte del SEO ?
+03:45:05	Profesor Coderhouse:	https://convertio.co/es/jpg-ico/
+03:45:27	Julio Moreno:	para los favicon también acepta svg ? o la buena practica dice que es mejor con .ico ?
+03:48:25	Profesor Coderhouse:	type="image/x-icon"
+03:48:44	Federico Pauza:	dale
+03:48:45	Yamil Moncau:	dalee
+03:54:51	Ana Guerreiro:	Estamos
+03:55:01	Cesar Rubiano Moreno:	presente
+03:55:02	[Tutor] Germán Geredus:	ultimo tiron!
+03:55:23	Federico Pauza:	Casi me quedo dormido
+03:55:24	Julio Moreno:	Si aquí en Santiago esta la locura con el calor
+03:55:25	Federico Pauza:	jajaja
+03:55:29	Facundo López Ordoqui:	Estoy en lo de mi novia y le están instalando el aire justo
+04:00:04	Yamil Moncau:	cerveza gratis eso llama la atención siempre
+04:00:12	Federico Pauza:	Reacted to "cerveza gratis eso l..." with 🤣
+04:00:15	Brian Gonzales Vidaurre:	Reacted to "cerveza gratis eso l..." with 😂
+04:02:28	Yamil Moncau:	sii
+04:03:16	Facundo López Ordoqui:	Reacted to "cerveza gratis eso l..." with 👆
+04:03:57	Federico Pauza:	nop
+04:03:58	Facundo López Ordoqui:	no
+04:04:01	Cesar Rubiano Moreno:	no nada
+04:04:04	Ana Guerreiro:	no
+04:04:12	Sebastian Moran:	no
+04:07:42	Profesor Coderhouse:	https://developer.mozilla.org/es/docs/Web/Accessibility/ARIA
+04:10:28	Facundo López Ordoqui:	coderhouse: no me quemes
+04:10:35	Brian Gonzales Vidaurre:	Reacted to "coderhouse: no me qu..." with 😂
+04:10:53	Julio Moreno:	desaprobada
+04:11:01	Andres Salamanca:	Reacted to "coderhouse: no me qu..." with 😂
+04:12:01	Julio Moreno:	y esa pagina solo sirve profe si esta hosteado y con un dominio? o lo podemos usar con nuestro proyecto ?
+04:12:24	[Tutor] Germán Geredus:	podes subir la url del githubpages
+04:12:27	Facundo López Ordoqui:	Replying to "y esa pagina solo si..."
+
+Creo que tendría que ser en una pagina hosteada. Porque de momento accedemos a nivel local a la pagina
+04:12:31	Brian Gonzales Vidaurre:	Reacted to "podes subir la url d..." with 👍
+04:12:37	Facundo López Ordoqui:	Reacted to "podes subir la url d..." with 😯
+04:12:41	Julio Moreno:	Reacted to "podes subir la url d..." with 👍
+04:12:44	Julio Moreno:	Reacted to "Creo que tendría que..." with 👍
+04:13:09	Facundo López Ordoqui:	Salvo si cargas la pagina de GitHub, como dijo German. Con ese si funcionaria
+04:13:35	Facundo López Ordoqui:	Si si
+04:14:06	Julio Moreno:	Reacted to "Salvo si cargas la p..." with 👍
+04:14:55	Federico Pauza:	Cambia bastante entre rendimiento movil y desktop
+04:15:49	Brian Gonzales Vidaurre:	Reacted to "Screenshot2024_10_19_123652.jpg" with 😯
+04:16:00	Brian Gonzales Vidaurre:	Reacted to "Screenshot2024_10_19_123652.jpg" with 👍
+04:16:49	Brian Gonzales Vidaurre:	que seria un sitemaps, otro menu?
+04:19:00	Julio Moreno:	lo probe a ver que tal haha
+04:19:27	Federico Pauza:	No nos la bajes asiii jajajajaja
+04:19:51	yamil moncau:	Reacted to "No nos la bajes asii..." with 😂
+04:20:04	[Tutor] Germán Geredus:	Reacted to "{418434B4-817C-4687-8216-F2E3F528F092}.png" with 💪
+04:20:14	Julio Moreno:	🫥
+04:20:52	Facundo López Ordoqui:	🥺
+04:24:02	Facundo López Ordoqui:	Nop
+04:24:04	Federico Pauza:	nop
+04:24:20	Facundo López Ordoqui:	W3School tiene que ver con ellos?
+04:24:58	Profesor Coderhouse:	https://www.w3.org/
+04:26:25	Profesor Coderhouse:	https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=es
+04:30:03	Profesor Coderhouse:	https://color.adobe.com/es/create/color-contrast-analyzer
+04:31:19	Profesor Coderhouse:	https://coolors.co/contrast-checker/4a9bf7-dd6b6b
+04:34:43	Julio Moreno:	en general profe, del proyecto final piden que se aplique SEO. Hay algunas meta tags que deban ir si o si ?
+04:36:42	Julio Moreno:	y si es el caso del logo de un navbar en svg, como se usa ?
+04:37:58	Julio Moreno:	ah claro y llamas al svg por css en vez del img entiendo
+04:38:39	Julio Moreno:	el cierre de la etiqueta
+04:38:49	Julio Moreno:	no cerro el </a>
+04:39:23	Federico Pauza:	Yo que le puse una imagen svg que descarga de bootstrap icon me dio así el html
+04:39:24	Federico Pauza:	<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+04:40:02	Cecilia Lozano:	yo tengo un logo SVG aplicado como imagen
+04:40:08	Cecilia Lozano:	como si fuera un JPG
+04:40:43	Cecilia Lozano:	y le apliqué el tamaño por CSS
+04:42:00	Julio Moreno:	en general profe, del proyecto final piden que se aplique SEO. Hay algunas meta tags que deban ir si o si ?
+04:42:08	Brian Gonzales Vidaurre:	que seria lo mas importante que tiene que tener de seo para la tercer entrega?
+04:43:15	Brian Gonzales Vidaurre:	bien
+04:43:29	Yamil Moncau:	estamos
