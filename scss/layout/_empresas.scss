@@ -1,0 +1,52 @@
+
+.flexContainer{
+    @include flex3(column,center,center);
+    padding-top: 50px;
+    gap: 20px;
+    h6{
+        color: aliceblue;
+        font-size: 30px;        
+    }
+    article{
+        @extend h6;
+        font-size: 20px;   
+    }
+    .bannBest{
+        img{    
+        width: 700px;
+        }
+    }
+    .top5{
+      @include flex3(row,center,center);
+      padding-top: 20px;
+      width: 80vw;
+     gap: 20px;      
+    } 
+    span{
+        color: yellow;
+        font-size: 1.5625rem;
+    } 
+}
+.flexContainer2{
+    @include flex3(column,center,center)
+}
+
+
+.compBan{
+    @include flex3(column,center,center);
+}
+.botonesPag{
+    @include flex3(row,center,center);
+    padding-top: 5px;
+    gap: 5px;
+
+}
+
+
+
+
+
+
+
+
+    

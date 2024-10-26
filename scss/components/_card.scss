@@ -214,7 +214,105 @@
         height: 150px;   
     }
 }
+}     
+        .imgCard{
+            img{
+                width: 10vw;
+                aspect-ratio: 1/1;
+            }
+        }
+    button{
+        all:unset;
+        @include flex3(column,center,center);
+        width: 60px;
+        height: 30px;
+        background-color: blueviolet;
+        border-radius: 20px;
+        a{
+        color: rgb(220, 250, 50);
+        text-decoration: none;
+        }
+        }
+    
+.cardEmp{
+    background-color: #e9bf5b;
+    @include flex3(column,center,center);
+      gap: 5px;
+      width: 15vw;
+      height: 210px;
+      border: 10px solid #fdd86e;
+      border-radius: 10px;
+        span{
+          color: rgb(255, 251, 0);
+          font-size: 18px;
+          strong{
+              font-size: 25px;
+              color: rgb(51, 51, 38);
+            } 
+        }
+    .lineCard{
+        width: 12vw;
+           height: 1px;
+           background-color:  rgb(255, 255, 255);
+    }
+    img{
+        width: 10vw;
+        padding-top: 5px;
+        aspect-ratio: 2/1;
+    }            
 }
+.compBan{
+    @include flex3(row,center,center);
+    width: 65vw;
+    aspect-ratio: 2 / 1;
+    background-color: #fdd86e;
+    border-radius: 10px;
+    .part1{
+        @include flex3(column,center,center);
+        width: 50%;
+        height: 100%;
+        background-color: aliceblue;
+        border-radius: 10px 0px 0px 10px;
+        img{
+            width: 400px;
+        }
+        article{
+            width: 300px;
+            color: #292723;
+        }
+    }
+    .part2{
+        @extend .part1;
+        background-color: #fdd86e;
+        border-radius: 0px 10px 10px 0px;
+        span{
+            color: rgb(61, 61, 71);
+            font-size: 1.5625rem;
+        }
+        article{
+            padding-top: 20px;
+            color: #5a5c61;
+            width: 300px;
+            
+        }
+        .officeImg{
+            @include flex3(row,center,center);
+            padding-top: 10px;
+            gap: 10px;
+                img{
+                    width: 200px;
+                    border-radius: 20px;
+                    aspect-ratio: 1/1;
+                }
+
+        }
+    }
+}
+
+  
+    
+
+
 
 
 

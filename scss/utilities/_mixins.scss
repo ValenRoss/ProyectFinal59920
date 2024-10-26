@@ -18,13 +18,12 @@ display: flex;
         justify-content: $justify;
         align-items: $align;
     }
-@mixin grid3($col,$row,$gap){
+@mixin grid2($col,$row){
     display: grid;
     grid-template-columns: $col;
     grid-template-rows: $row;
-    gap: $gap;
 }
-@mixin grid2($col,$row,$width,$height){
+@mixin grid4($col,$row,$width,$height){
     display: grid;
     grid-template-columns: $col;
     grid-template-rows: $row;
