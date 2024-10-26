@@ -305,9 +305,14 @@ footer {
     width: 700px;
     padding-top: 60px;
     color: #19bcee; }
-  .gridSection2 .botonPag {
+  .gridSection2 .botonPagF {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     padding-top: 10px; }
-    .gridSection2 .botonPag button {
+    .gridSection2 .botonPagF button {
       width: 25px;
       aspect-ratio: 1/2;
       background-color: blue;
@@ -358,6 +363,21 @@ footer {
   align-items: center;
   padding-top: 5px;
   gap: 5px; }
+
+.gridRrhh {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  gap: 30px; }
+  .gridRrhh h6, .gridRrhh .flexContainer article, .flexContainer .gridRrhh article {
+    font-size: 25px;
+    color: yellowgreen; }
+  .gridRrhh article {
+    font-size: 1.125rem;
+    color: antiquewhite;
+    width: 500px; }
 
 .navBar {
   display: flex;
@@ -710,6 +730,33 @@ button {
         width: 200px;
         border-radius: 20px;
         aspect-ratio: 1/1; }
+
+.banR {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  gap: 20px;
+  width: 50vw;
+  aspect-ratio: 5 / 1; }
+  .banR .dirImg img {
+    width: 150px;
+    border-radius: 150px; }
+  .banR span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .banR span p {
+      font-size: 1.375rem;
+      color: #c2d18c;
+      width: 500px; }
+    .banR span p2 {
+      font-size: 18px;
+      color: antiquewhite;
+      text-align: right;
+      padding-top: 10px; }
 
 @media (max-width: 768px) {
   .navBar {

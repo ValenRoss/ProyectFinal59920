@@ -1,0 +1,14 @@
+.gridRrhh{
+    @include flex3(column,center,center);
+    padding-top: 50px;
+    gap: 30px;
+    h6{
+        font-size: 25px;
+        color: yellowgreen;
+    }
+    article{
+        font-size: 1.125rem;
+        color: antiquewhite;
+        width: 500px;
+    }
+}

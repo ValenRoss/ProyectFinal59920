@@ -308,6 +308,33 @@
         }
     }
 }
+.banR{
+    @include flex3(row,center,center);
+    padding-top: 100px;
+    gap: 20px;
+    width: 50vw;
+    aspect-ratio: 5 / 1;
+    .dirImg{
+        img{
+            width: 150px;
+            border-radius: 150px;
+        }
+    }
+    span{
+        @include flex3(column,center,center);
+        p{
+            font-size: 1.375rem;
+            color: #c2d18c;
+            width: 500px;
+        } 
+        p2{
+            font-size: 18px;
+            color: antiquewhite;
+            text-align: right;
+            padding-top: 10px;
+        }          
+    }
+}
 
   
     

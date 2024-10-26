@@ -30,7 +30,9 @@
         padding-top: 60px;
         color: map-get($colorSitio, colorbox2);
     }
-    .botonPag{
+    .botonPagF{
+        @include flex3(row,center,center);
+        gap: 5px;
         padding-top: 10px;
         button{    
         width: 25px;
