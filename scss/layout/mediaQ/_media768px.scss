@@ -23,7 +23,7 @@
     .gridMain{
         @include flex3(column,center,center);
         height: 500px;
-        padding-top: 200px;
+        padding-top: 25px;
         .searchBar{
             @include flex3(column,center,center);            
             @include w-h(400px,40px);
@@ -40,31 +40,6 @@
             
         }
     }
-    footer{
-        @include w-h(768px,100px);
-        section2{
-            .redPart{                  
-                .redes{
-                    width: 100vw;
-                    height: 300px;               
-                ul{
-                    li{
-                        width: 150px;
-                        font-size: 12px;
-                    }                   
-                }               
-                }
-                }
-        }   
-            .footText{
-                width: 500px;
-                p{
-                    font-size: 10   px;
-                }
-                
-            }
-    }
-}
 .jobCard{
     @include flex3(row,center,center);
     gap: 10px;
@@ -79,8 +54,66 @@
             }
         }
         }
+}
+// MediaQ_OfertasLab
+.ofertGrid{
+    h5{
+        width: 700px;
+
+    }
+}
+// MediaQ_TV_Cv //
+.cvGrid{
+    img{
+        width: 350px;
+    }
+    article{
+        width: 350px;
+    }
+    
+}
+.profile{
+    img{
+        padding-top: 50px;
+    }
+}
+.profileCv{
+    article2{
+        width: 400px;
+        height: 250px;
+    }
+}
+// MEDIA OFERT_LAB
+.gridSection2{
+    width: 768px;
+}
 
 
+// MEDIA Q FOOTER
+footer{
+    @include w-h(768px,100px);
+    section2{
+        .redPart{                  
+            .redes{
+                width: 100vw;
+                height: 300px;               
+            ul{
+                li{
+                    width: 150px;
+                    font-size: 12px;
+                }                   
+            }               
+            }
+            }
+    }   
+        .footText{
+            width: 500px;
+            p{
+                font-size: 10   px;
+            }
+            
+        }
+}
 }
 
     

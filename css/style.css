@@ -34,31 +34,36 @@ header {
     justify-content: center;
     align-items: center; }
 
-section {
+.sectionInd {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100px; }
-  section h1 {
+  height: 100px;
+  padding-top: 300px; }
+  .sectionInd h1 {
     width: 800px;
     display: flex;
     flex-direction: grow;
     justify-content: center;
     align-items: center;
     color: #b9f331; }
-  section article {
+  .sectionInd article {
     padding-top: 20px;
     width: 50%;
     height: 80px;
     color: aliceblue; }
+    .sectionInd article strong {
+      width: 20px;
+      color: antiquewhite; }
 
 section2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding-top: 300px; }
   section2 .compList {
     display: flex;
     flex-direction: column;
@@ -170,7 +175,6 @@ footer {
         width: 400px; }
   footer .footText p {
     width: 800px;
-    font-family: Shrikhand;
     font-size: 12px; }
 
 .cvGrid {
@@ -179,19 +183,23 @@ footer {
   justify-content: center;
   align-items: center;
   padding-top: 100px; }
-  .cvGrid .cvImg {
-    grid-column: 3 / 4;
-    grid-row: 3 / 5;
-    order: 2; }
-    .cvGrid .cvImg img {
-      width: 400px; }
-  .cvGrid h2 {
-    color: yellow;
-    padding-top: 20px; }
-  .cvGrid article {
-    padding-top: 20px;
-    color: yellow;
-    width: 10vw; }
+
+h2 {
+  color: yellow;
+  padding-top: 20px; }
+
+article {
+  padding-top: 20px;
+  padding-left: 10px;
+  color: yellow;
+  width: 25vw;
+  font-size: 20px; }
+  article strong {
+    color: aliceblue;
+    font-size: 25px; }
+
+img {
+  width: 400px; }
 
 .cvTips {
   padding-top: 50px;
@@ -239,6 +247,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 400px;
   gap: 10px; }
   .checkList input {
     width: 120px; }
@@ -296,27 +305,20 @@ footer {
   justify-content: center;
   align-items: center;
   padding-top: 100px;
-  width: 100vw; }
-  .gridSection2 span {
-    font-size: 30px;
-    color: yellowgreen; }
-  .gridSection2 span {
-    font-size: 18px;
-    width: 700px;
+  width: 90vw; }
+  .gridSection2 .anun1 {
+    font-size: 35px;
     padding-top: 60px;
-    color: #19bcee; }
-  .gridSection2 .botonPagF {
+    color: yellowgreen;
+    font-family: AlumniSansPinstripe; }
+  .gridSection2 .ofertBan img {
+    width: 800px;
+    aspect-ratio: 1,5/1; }
+  .gridSection2 .bannAlign {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 5px;
-    padding-top: 10px; }
-    .gridSection2 .botonPagF button {
-      width: 25px;
-      aspect-ratio: 1/2;
-      background-color: blue;
-      color: aliceblue; }
+    align-items: center; }
 
 .flexContainer {
   display: flex;
@@ -370,12 +372,12 @@ footer {
   justify-content: center;
   align-items: center;
   padding-top: 50px;
-  gap: 30px; }
+  gap: 10px; }
   .gridRrhh h6, .gridRrhh .flexContainer article, .flexContainer .gridRrhh article {
     font-size: 25px;
     color: yellowgreen; }
   .gridRrhh article {
-    font-size: 1.125rem;
+    font-size: 1.5625rem;
     color: antiquewhite;
     width: 500px; }
 
@@ -406,7 +408,6 @@ footer {
       background-color: yellow;
       color: black;
       border-radius: 40px;
-      font-family: Oxygen;
       font-size: 12px; }
     .navBar ul input {
       background-color: yellow; }
@@ -418,12 +419,11 @@ footer {
       height: 50px;
       color: #f2f2e4;
       padding-left: 100px;
-      font-size: 1.125rem;
-      font-family: Oxygen; }
+      font-size: 1.125rem; }
 
 .searchBar {
   width: 700px;
-  height: 150px;
+  height: 120px;
   background-color: yellow;
   border-radius: 50px; }
   .searchBar ul {
@@ -439,6 +439,7 @@ footer {
       height: 35px; }
     .searchBar ul input {
       background-color: black;
+      width: 8vw;
       color: yellow; }
 
 .card, .card2, .card3 {
@@ -599,7 +600,7 @@ footer {
 
 .banOfer1 {
   display: flex;
-  flex-direction: grow;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 700px;
@@ -619,28 +620,35 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 750px;
   gap: 20px; }
+  .bannAlign span {
+    color: white; }
   .bannAlign .bann2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid blue;
+    width: 750px;
+    border: 2px solid #a4f50d;
     padding: 10px;
     border-radius: 20px; }
-    .bannAlign .bann2 button {
-      width: 80px;
-      aspect-ratio: 2/1;
-      background-color: #8de22b;
-      border-radius: 30px;
-      color: #1d2a36; }
     .bannAlign .bann2 .banOfer1 {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      width: 700px;
-      height: 150px; }
+      width: 750px;
+      height: 200px; }
+    .bannAlign .bann2 .jobDescript {
+      width: 70%;
+      padding-top: 40px; }
+  .bannAlign button {
+    width: 80px;
+    aspect-ratio: 2/1;
+    background-color: #8de22b;
+    border-radius: 30px;
+    color: #1d2a36; }
 
 .imgCard img {
   width: 10vw;
@@ -758,6 +766,52 @@ button {
       text-align: right;
       padding-top: 10px; }
 
+.teamS {
+  color: orange;
+  font-size: 25px;
+  padding-top: 20px; }
+
+.team {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  width: 800px;
+  gap: 10px; }
+  .team img {
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 50px; }
+
+.teamF {
+  color: yellowgreen;
+  font-family: Oxygen;
+  font-size: 25px; }
+
+.joinUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  width: 160px;
+  height: 50px;
+  border-radius: 60px; }
+
+.botonPagF {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-top: 10px; }
+  .botonPagF button {
+    width: 25px;
+    aspect-ratio: 1/2;
+    background-color: blue;
+    color: aliceblue; }
+
 @media (max-width: 768px) {
   .navBar {
     display: flex;
@@ -786,7 +840,7 @@ button {
     justify-content: center;
     align-items: center;
     height: 500px;
-    padding-top: 200px; }
+    padding-top: 25px; }
     .gridMain .searchBar {
       display: flex;
       flex-direction: column;
@@ -800,6 +854,35 @@ button {
       .gridMain .searchBar ul div img {
         width: 18px;
         height: 25px; }
+  .jobCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+    height: 150px; }
+    .jobCard .preview {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px; }
+      .jobCard .preview .jobMini Img {
+        width: 120px; }
+  .ofertGrid h5 {
+    width: 700px; }
+  .cvGrid img {
+    width: 350px; }
+  .cvGrid article {
+    width: 350px; }
+  .profile img {
+    padding-top: 50px; }
+  .profileCv article2 {
+    width: 400px;
+    height: 250px; }
+  .gridSection2 {
+    width: 768px; }
   footer {
     width: 768px;
     height: 100px; }
@@ -813,23 +896,6 @@ button {
       width: 500px; }
       footer .footText p {
         font-size: 10   px; } }
-
-.jobCard {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 150px;
-  height: 150px; }
-  .jobCard .preview {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; }
-    .jobCard .preview .jobMini Img {
-      width: 120px; }
 
 @media (max-width: 320px) {
   .navBar {
@@ -862,23 +928,41 @@ button {
       width: 750px; }
   .redes {
     width: 300px; }
+  .gridMain {
+    width: 750px;
+    height: 400px; }
+  section article {
+    padding-top: 300px;
+    width: 500px; }
+  .ofertGrid {
+    width: 800px; }
+    .ofertGrid h5 {
+      width: 700px; }
+  .gridSection2 {
+    width: 800px; }
+    .gridSection2 .banOfer1 {
+      width: 400px; }
+    .gridSection2 .bannAlign {
+      width: 700px; }
+  .cvGrid {
+    width: 750px; }
+  .profileCv {
+    width: 750px; }
+    .profileCv .formCv, .profileCv .checkList {
+      padding-left: 50px; }
+  .checkList {
+    height: 300px;
+    padding-top: 300px; }
+  .bannAlign {
+    width: 600px; }
+  .gridRrhh {
+    width: 750px; }
   footer section2 {
     width: 100%; }
     footer section2 .redPart {
       width: 100%; }
       footer section2 .redPart .redes {
-        width: 100%; }
-  .ofertGrid {
-    width: 750px; }
-    .ofertGrid h5 {
-      width: 700px; }
-  .gridSection2 {
-    width: 740px;
-    padding-top: 50px; }
-    .gridSection2 .banOfer1 {
-      width: 400px; }
-    .gridSection2 .bannAlign {
-      width: 700px; } }
+        width: 100%; } }
 
 @container card (max-width: 500px) {
   precio {

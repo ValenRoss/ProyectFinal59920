@@ -18,7 +18,6 @@ main{
             }
         }
     }
-
     section{
         width: 750px;
         h1{
@@ -35,13 +34,67 @@ main{
             width: 750px;
         }
     }
-}
-    
+}  
     .redes{
         width: 300px;
-
     }
+// MediaQ Search Bar //
+.gridMain{
+    width: 750px;
+    height: 400px;
 
+}
+section{
+    article{
+        padding-top: 300px;
+        width: 500px;
+    }
+    
+}
+.ofertGrid{
+    width: 800px;
+    h5{
+        width: 700px;
+    }
+}
+
+.gridSection2{
+    width: 800px;
+    .banOfer1{
+        width: 400px;
+    }
+    .bannAlign{
+        width: 700px;
+    }
+}
+
+// MEDIA Q PAG CV//
+.cvGrid{
+    width: 750px;
+}
+.profileCv{
+    width: 750px;
+
+    .formCv{
+        padding-left: 50px;
+    }
+}
+.checkList{
+    height: 300px;
+    padding-top: 300px;
+}
+// MEDIA Q OFERTLAB //
+.bannAlign{
+    width: 600px;    
+}
+// MEDIA Q RRHH //
+.gridRrhh{
+    width: 750px;
+}
+
+
+
+// MEDIA Q FOOTER //
 footer{
     section2{
         width: 100%;
@@ -53,26 +106,9 @@ footer{
         }      
     }        
 }
-.ofertGrid{
-    width: 750px;
-    h5{
-        width: 700px;
-    }
-}
-
-.gridSection2{
-    width: 740px;
-    padding-top: 50px;
-    .banOfer1{
-        width: 400px;
-
-    }
 
 
-.bannAlign{
-    width: 700px;
-}
-}
+
 }
 
 

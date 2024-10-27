@@ -7,29 +7,36 @@
             background-repeat: no-repeat;
             background-size: 95vw,200px;
             background-position-x: center;
-            background-position-y: 100px;   
+            background-position-y: 100px;       
             .searchBar{
                 margin-top: 500px;
                 @include flex3(row,center,center);
             }
         }
     
-            section{
+            .sectionInd{
                 @include flex3(column,center,center);
                 @include w-h(100vw,100px);
+                padding-top: 300px;
                 h1{
                     width: 800px;
                     @include flex3(grow,center,center);
                     color: rgb(185, 243, 49);
+                    font-family: map-get($fuentesStio, fuente2);
                 }
                 article{    
                     padding-top: 20px;
                     @include w-h(50%,80px);
                     color: aliceblue;
+                    strong{
+                        width: 20px;
+                        color: antiquewhite;
+                    }
                 }
             }
             section2{
                 @include flex3(column,center,center);
+                padding-top: 300px;
                 .compList{
                     @include flex3(column,center,center);
                 }

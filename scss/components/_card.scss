@@ -163,6 +163,7 @@
         border-radius: 70px;
         }
 }
+
 .topJob1{
     @extend .topJob;
     margin-top: 50px;
@@ -171,12 +172,12 @@
 .topJob2{
     @extend .topJob1;
 }
+// Style_OfertasLab
 .banOfer1{
-    @include flex3(grow,center,center);
+    @include flex3(column,center,center);
     width: 700px;
     height: 150px;
-    padding-top: 100px;
-    
+    padding-top: 100px;  
     .part1{
         width: 150px;
         aspect-ratio: 1/1;
@@ -194,27 +195,37 @@
 }
 .bannAlign{
     @include flex3(column,center,center);
+    width: 750px;   
     gap: 20px;
-
+    span{
+        color: map-get($colorFuente , color0)
+    }
     .bann2{
     @include flex3(column,center,center);
-    border: 2px solid blue;
+    width: 750px;
+    border: 2px solid rgb(164, 245, 13);
     padding: 10px;
     border-radius: 20px;
-    button{
-        width: 80px;
-        aspect-ratio: 2/1;
-        background-color: rgb(141, 226, 43);
-        border-radius: 30px;
-        color: rgb(29, 42, 54);
+        .banOfer1{
+            @include flex3(row,center,center);
+            width: 750px;
+            height: 200px;   
+            }
+        .jobDescript{
+            width: 70%;
+            padding-top: 40px;
+            
+        }
+        }       
+        button{
+            width: 80px;
+            aspect-ratio: 2/1;
+            background-color: rgb(141, 226, 43);
+            border-radius: 30px;
+            color: rgb(29, 42, 54);
+        }
     }
-    .banOfer1{
-        @include flex3(row,center,center);
-        width: 700px;
-        height: 150px;   
-    }
-}
-}     
+                
         .imgCard{
             img{
                 width: 10vw;
@@ -232,8 +243,10 @@
         color: rgb(220, 250, 50);
         text-decoration: none;
         }
-        }
+    }
+
     
+// Style Pag Empresas
 .cardEmp{
     background-color: #e9bf5b;
     @include flex3(column,center,center);
@@ -261,6 +274,7 @@
         aspect-ratio: 2/1;
     }            
 }
+
 .compBan{
     @include flex3(row,center,center);
     width: 65vw;
@@ -308,6 +322,7 @@
         }
     }
 }
+// RRHH Style
 .banR{
     @include flex3(row,center,center);
     padding-top: 100px;
@@ -335,6 +350,52 @@
         }          
     }
 }
+.teamS{
+    color: map-get($colorFuente , color3);
+    font-size: 25px;
+    padding-top: 20px;
+}
+.team{
+    @include flex3(row,center,center);
+    padding-top: 20px;
+    width: 800px;
+    gap: 10px;
+    img{
+        width: 100px;
+        aspect-ratio: 1/1;
+        border-radius: 50px;
+    }
+}
+
+.teamF{
+    color: map-get($colorFuente, color1);
+    font-family: map-get($tipoSitio , fuente3);
+    font-size: 25px;
+
+}
+.joinUs{
+    @include flex3(column,center,center);
+    margin-top: 40px;
+    width: 160px;
+    height: 50px;
+    border-radius: 60px;
+}
+
+
+
+
+.botonPagF{
+    @include flex3(row,center,center);
+    gap: 5px;
+    padding-top: 10px;
+    button{    
+    width: 25px;
+    aspect-ratio: 1/2;
+    background-color: blue;
+    color: aliceblue;
+    }
+}
+// RRHH Style
 
   
     

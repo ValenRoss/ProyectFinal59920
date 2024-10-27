@@ -1,13 +1,7 @@
 .cvGrid{
     @include flex3(column,center,center);
-    padding-top: 100px;
-    .cvImg{
-        grid-column: 3 / 4;
-        grid-row: 3 / 5;
-        order: 2;
-        img{
-            width: 400px;            
-        }
+    padding-top: 100px;    
+        
     }
     h2{
         color: yellow;
@@ -15,10 +9,19 @@
     }
     article{
         padding-top: 20px;
+        padding-left: 10px;
         color: yellow;
-        width: 10vw;    
+        width: 25vw;  
+        font-size: 20px; 
+        strong{
+            color: aliceblue;
+            font-size: 25px;
+        }
     }
-}
+    img{
+        width: 400px;            
+    }
+
 .cvTips{
     padding-top: 50px;
     @include flex3(row,center,center); 
@@ -62,6 +65,7 @@
         .checkList{
             @extend .formCv;
             @include flex3(column,center,center);
+            height: 400px;
             gap: 10px;
             input{
                 width: 120px;             

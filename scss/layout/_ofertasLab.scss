@@ -19,27 +19,21 @@
 .gridSection2{
     @include flex3(column,center,center);
     padding-top: 100px;
-    width: 100vw;
-    span{
-        font-size: 30px;
-        color: yellowgreen;
-    }
-    span{
-        font-size: 18px;
-        width: 700px;
+    width: 90vw;
+    .anun1{
+        font-size: 35px;
         padding-top: 60px;
-        color: map-get($colorSitio, colorbox2);
+        color: map-get($colorFuente, color1);
+        font-family: map-get($tipoSitio, fuente2);
     }
-    .botonPagF{
-        @include flex3(row,center,center);
-        gap: 5px;
-        padding-top: 10px;
-        button{    
-        width: 25px;
-        aspect-ratio: 1/2;
-        background-color: blue;
-        color: aliceblue;
+    .ofertBan{
+        img{
+            width: 800px;
+            aspect-ratio: 1,5/1;
         }
+    }
+    .bannAlign{
+        @include flex3(column,center,center);
     }
 }
  

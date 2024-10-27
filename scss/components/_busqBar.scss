@@ -1,6 +1,6 @@
 
 .searchBar{
-    @include w-h(700px,150px);
+    @include w-h(700px,120px);
     background-color: yellow;
     border-radius: 50px;
         ul{
@@ -11,6 +11,7 @@
             }
             input{
                 background-color: rgb(0, 0, 0);  
+                width: 8vw;
                 color: yellow;       
             }
         }
