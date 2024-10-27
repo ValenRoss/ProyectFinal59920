@@ -41,22 +41,23 @@ header {
   align-items: center;
   width: 100vw;
   height: 100px;
-  padding-top: 300px; }
+  padding-top: 0px; }
   .sectionInd h1 {
     width: 800px;
     display: flex;
     flex-direction: grow;
     justify-content: center;
     align-items: center;
-    color: #b9f331; }
+    color: #b9f331;
+    padding-top: 300px; }
   .sectionInd article {
     padding-top: 20px;
     width: 50%;
     height: 80px;
-    color: aliceblue; }
+    color: aquamarine; }
     .sectionInd article strong {
       width: 20px;
-      color: antiquewhite; }
+      color: aquamarine; }
 
 section2 {
   display: flex;
@@ -69,26 +70,31 @@ section2 {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  section2 .empImg {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 500px; }
-    section2 .empImg img {
-      width: 100px;
-      border-radius: 80px;
-      border: 4px solid yellowgreen; }
-    section2 .empImg span {
-      padding-left: 20px;
-      color: yellow;
-      width: 400px;
-      font-size: 15px;
-      font-family: Shrikhand; }
-  section2 .company img {
-    width: 600px;
-    border-radius: 20px;
-    border: 2px solid chartreuse; }
+
+.empImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 500px; }
+  .empImg img {
+    width: 100px;
+    border-radius: 80px;
+    border: 4px solid yellowgreen; }
+  .empImg span {
+    padding-left: 20px;
+    color: white;
+    width: 400px;
+    font-size: 15px;
+    font-family: Shrikhand; }
+
+.company img {
+  width: 600px;
+  border-radius: 20px;
+  border: 2px solid chartreuse; }
+
+.cardDesc {
+  color: yellow; }
 
 section3 {
   display: flex;
@@ -102,8 +108,7 @@ section3 {
     align-items: center;
     width: 400px;
     padding-top: 50px;
-    font-size: larger;
-    font-weight: bold;
+    font-size: 2.1875rem;
     color: yellow; }
 
 body {
@@ -309,7 +314,7 @@ img {
   .gridSection2 .anun1 {
     font-size: 35px;
     padding-top: 60px;
-    color: yellowgreen;
+    color: aquamarine;
     font-family: AlumniSansPinstripe; }
   .gridSection2 .ofertBan img {
     width: 800px;
@@ -423,7 +428,7 @@ img {
 
 .searchBar {
   width: 700px;
-  height: 120px;
+  height: 90px;
   background-color: yellow;
   border-radius: 50px; }
   .searchBar ul {
@@ -767,7 +772,7 @@ button {
       padding-top: 10px; }
 
 .teamS {
-  color: orange;
+  color: yellow;
   font-size: 25px;
   padding-top: 20px; }
 
@@ -785,16 +790,15 @@ button {
     border-radius: 50px; }
 
 .teamF {
-  color: yellowgreen;
+  color: aquamarine;
   font-family: Oxygen;
   font-size: 25px; }
 
-.joinUs {
+button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
   width: 160px;
   height: 50px;
   border-radius: 60px; }

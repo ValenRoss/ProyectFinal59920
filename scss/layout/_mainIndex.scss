@@ -17,20 +17,21 @@
             .sectionInd{
                 @include flex3(column,center,center);
                 @include w-h(100vw,100px);
-                padding-top: 300px;
+                padding-top: 0px;
                 h1{
                     width: 800px;
                     @include flex3(grow,center,center);
                     color: rgb(185, 243, 49);
                     font-family: map-get($fuentesStio, fuente2);
+                    padding-top: 300px;
                 }
                 article{    
                     padding-top: 20px;
                     @include w-h(50%,80px);
-                    color: aliceblue;
+                    color: map-get($colorFuente, color1 );
                     strong{
                         width: 20px;
-                        color: antiquewhite;
+                        color: map-get($colorFuente, color1 );
                     }
                 }
             }
@@ -39,6 +40,9 @@
                 padding-top: 300px;
                 .compList{
                     @include flex3(column,center,center);
+                }
+
+
                 }
                 .empImg{
                     @include flex3(row,center,center);
@@ -51,7 +55,7 @@
                     }
                     span{
                         padding-left: 20px;
-                        color: map-get($colorSitio, color2);
+                        color: white;
                         width: 400px;
                         font-size: 15px;
                         font-family:Shrikhand;                      
@@ -65,21 +69,25 @@
                     }
                     
                 }
-               
-            }
+                .cardDesc{
+                    color: map-get($colorFuente, color3 );
+                }
+                
             section3{              
                 @include flex3(column,center,center);             
                 .textCand{
                     @include flex3(row,center,center);
                     width: 400px;
                     padding-top: 50px;
-                    font-size: larger;
-                    font-weight: bold;  
+                    font-size:2.1875rem; 
                     color: map-get($colorSitio,color2)
                         
                     }
-               
+            
             }
+            
+               
+            
                      
                 
 
