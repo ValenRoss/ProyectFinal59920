@@ -1,21 +1,118 @@
-.ofertGrid{
+.ofertContain{
     @include flex3(column,center,center);
-    width: 100vw;
-    padding-top: 80px;
-    h5{
-        font-size: 25px;
-        color: yellowgreen;
-        width: 800px;
-        padding-bottom: 10px;
-    }
-    .jobImg{
-        img{
-            width: 600px;
-            border-radius: 200px;
+    width: 100%;
+    padding-top: 40px;
+    width: 100%;
+        h5{
+            font-size: 30px;
+            width: 80%;
+            max-width: 800px;
+            color: yellowgreen;
+            padding-bottom: 10px;
+            text-align: center;
         }
-      
+        .artOfert{
+            font-size: 25px;
+            color: map-get($colorFuente , color3 );
+            width: 90%;
+            max-width: 800px;
+            min-width: 320px;
+            strong{
+                font-size: 25px;
+                a{
+                    text-decoration: none;
+                    all: unset;
+                }
+            }
+        }
+        .jobImg{
+            @include flex3(column,center,center);
+            img{
+                width: 80%;
+                max-width: 800px;
+                border-radius: 200px;
+                justify-content: center;
+            }    
+        }
 }
+
+.ofertGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    padding-top: 100px;
+    .containCard1{
+        @include flex3(column,center,center);
+        background-color: rgba(255, 234, 113, 0.651);
+        width: 90%;
+        max-width: 400px;
+        height: 600px;
+        margin: auto;
+        container-type:inline-size;
+        container-name: contCard;
+        border: 2px solid yellowgreen;
+        border-radius: 20px;
+        margin-bottom: 50px;
+        .logo{
+            @include flex3(column,center,center);
+            img{
+                width: 40%;
+                margin: 10px;
+            }
+            p{
+                color: rgb(123, 255, 0);
+                text-align: center;
+                font-size: 25px;
+            }
+            .ofertArt{
+                color: antiquewhite;
+                text-wrap: pretty;
+                max-width: 80%;
+                min-width: 200px;
+                strong{
+                    font-size: 20px;
+                    color: yellow;
+                }
+            }
+        }
+        .localImg{
+            padding-top: 50px;
+            width: 75%;
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        button{
+            all: unset;
+            text-decoration: none;
+            @include flex3(row,center,center);
+            background-color: rgb(189, 28, 230);
+            width: 20%;
+            height: 25px;
+            border-radius: 10px;
+            margin: 10px;
+            a{
+                text-decoration: none;
+                color: aliceblue;
+            }
+        }
+    }
 }
+.containCard2{
+    @extend .containCard1;
+}
+.containCard3{
+    @extend .containCard1;
+}
+.containCard4{
+    @extend .containCard1;
+}
+.containCard5{
+    @extend .containCard1;
+}
+
+
+
 .gridSection2{
     @include flex3(column,center,center);
     padding-top: 100px;

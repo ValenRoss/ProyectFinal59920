@@ -1,4 +1,4 @@
-.gridRrhh{
+.flexRrhh{
     @include flex3(column,center,center);
     padding-top: 50px;
     gap: 10px;
@@ -11,4 +11,16 @@
         color: antiquewhite;
         width: 500px;
     }
+}
+.centralGrid{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(800px,1fr));
+}
+.teamGrid{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
 }

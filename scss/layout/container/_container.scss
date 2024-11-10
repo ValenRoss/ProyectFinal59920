@@ -1,0 +1,41 @@
+// Container Index //
+
+@container cardContain(width > 600px){
+    article{
+        display: grid;
+        grid-auto-flow: column;
+    .imageCont{
+        img{
+            width: 100%;
+        }
+    }
+
+    }
+
+}
+@container cardContain(width < 600px){
+    article{
+        @include flex3(row,center,center);
+        width: 50%;
+    }
+    .imageCont{
+        img{
+            width: 80%;
+        }
+    }
+}
+
+
+@container cardQ (width < 600px){
+    .cardPostGrid{
+        .cardPost{
+            span{
+                font-size: 20px;
+            }
+            p{
+                font-size: 60px;
+            }
+        }
+    } 
+}
+// Container Index //

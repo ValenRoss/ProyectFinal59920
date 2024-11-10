@@ -18,6 +18,7 @@ display: flex;
         justify-content: $justify;
         align-items: $align;
     }
+
 @mixin grid2($col,$row){
     display: grid;
     grid-template-columns: $col;

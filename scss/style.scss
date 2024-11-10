@@ -13,6 +13,7 @@
 @import "./layout/ofertasLab";
 @import "./layout/empresas";
 @import "./layout/rrhh";
+@import "./layout/index";
 
 @import "./components/navBar";
 @import "./components/busqBar";
@@ -21,3 +22,5 @@
 @import "./layout/mediaQ/media768px";
 @import "./layout/mediaQ/media320px";
 @import "./layout/mediaQ/container";
+
+@import "../scss/layout/container/container";

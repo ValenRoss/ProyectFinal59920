@@ -1,116 +1,121 @@
-@media(max-width:320px){
-    .navBar{
-        height: 50px;
-    }
-main{
-    .gridMain{
-        @include flex3(row,center,center);
-        background-position-x: 15px;
-        background-position-y: center;
-        width: 800px;
-        padding-right: 50px;
-        background-size: 700px,400px;   
-        .searchBar{
-            width: 400px;
-            input{
-                width: 70px;
-                height: 15px;
+
+@media (max-width:320px){
+// Barra de Navegacion
+.naviBar{
+    width: 100%;
+    height: 30px;
+    ul{
+        width: 310px;
+        // padding-left: 50px;
+        gap: 5px;
+        button{
+            width: 100%;
+            height: 20px;
+            a{
+                font-size: 10px;
             }
         }
+
+        label{
+            img{
+                display: none;
+            }
+            input{
+                display: none;
+            }
+        }
+
     }
-    section{
-        width: 750px;
-        h1{
-            width: 95vw;
+}
+
+// Barra de Navegacion End //
+
+// Ofert Lab//
+.artOfert{
+    width: 80%;
+    font-size: 10px;
+}
+// Ofert Lab//
+
+
+
+// MediaQ card
+.mainContain{
+   .busqSect{
+    width: 300px;
+    margin: 50px;
+    aspect-ratio: 2/1;
+    .izq{
+        width: 50%;
+    }
+    .der{
+        width: 49%;
+        strong{
+            font-size: 12px;
         }
         article{
-            width: 80vw;
+            width: 80%;
+            font-size: 8px;
         }
-    }
-    section2{
-        width: 750px;
-        padding-top: 100px;
-        .complist{
-            width: 750px;
-        }
-    }
-}  
-    .redes{
-        width: 300px;
-    }
-// MediaQ Search Bar //
-.gridMain{
-    width: 750px;
-    height: 400px;
-
-}
-section{
-    article{
-        padding-top: 300px;
-        width: 500px;
-    }
-    
-}
-.ofertGrid{
-    width: 800px;
-    h5{
-        width: 700px;
-    }
-}
-
-.gridSection2{
-    width: 800px;
-    .banOfer1{
-        width: 400px;
-    }
-    .bannAlign{
-        width: 700px;
-    }
-}
-
-// MEDIA Q PAG CV//
-.cvGrid{
-    width: 750px;
-}
-.profileCv{
-    width: 750px;
-
-    .formCv{
-        padding-left: 50px;
-    }
-}
-.checkList{
-    height: 300px;
-    padding-top: 300px;
-}
-// MEDIA Q OFERTLAB //
-.bannAlign{
-    width: 600px;    
-}
-// MEDIA Q RRHH //
-.gridRrhh{
-    width: 750px;
-}
-
-
-
-// MEDIA Q FOOTER //
-footer{
-    section2{
-        width: 100%;
-        .redPart{
-            width: 100%;
-            .redes{
-                width: 100%;
+        button{
+            width: 30%;
+            height: 15%;
+            a{
+                font-size: 10px;
             }
-        }      
-    }        
+        }
+
+    }
+   }
+}
+// SectioN Empresas //
+    .groupStar{
+        @include flex3(column,center,center);
+        width: 100%;
+        img{
+            width: 5%;
+        }
+    }
+// SectioN Empresas End//
+
+// Section Footer //
+.sectionFoot{
+    .footer{
+        .list1{
+            strong{
+                font-size: 14px;
+            }
+            .line2{
+                width: 60px;
+            }
+        }
+        height: 200px;
+        @include flex4(row,center,center,20px);
+        ul{
+            @include flex3(column,center,center);
+            p{
+                font-size: 12px;
+            }
+            li{
+                font-size: 10px;
+                text-wrap:balance;
+            }
+        }
+    }
+}
+.redPart{
+    .line{
+        width: 40px;
+    }
+    .redIco{
+        img{
+            width: 20px;
+        }
+}
 }
 
 
-
 }
-
 
 
 

@@ -1,119 +1,78 @@
 @media(max-width:768px){
-.navBar{  
-    @include flex3(row,center,center);
-    width: 768px;
-        ul{
-            width: 768px;
-            @include flex4(row,center,center,10px);
-            padding-right: 100px;
-            
+
+// Barra de Navegacion
+.naviBar{
+    padding-left: 40px;
+    ul{
+        gap: 10px;
         button{
-            width: 80px;
-        }
-        label{
-            padding-left: 10px;
-            width: 50px;
-        }
-        input{
-            width: 100px;
-
-        }
+            width: 70px;
+            height: 30px;
+            a{
+                font-size: 10px;
+            }
+        
         }   
-    }
-    .gridMain{
-        @include flex3(column,center,center);
-        height: 500px;
-        padding-top: 25px;
-        .searchBar{
-            @include flex3(column,center,center);            
-            @include w-h(400px,40px);
-            input{
-                width: 60px;
-                height: 15px;
-            }
-            ul{
-                div img{
-                    width: 18px;
-                    height: 25px;
-                }
-            }
-            
-        }
-    }
-.jobCard{
-    @include flex3(row,center,center);
-    gap: 10px;
-    width: 150px;
-    height: 150px;
-        .preview{
-            @include flex3(column,center,center);
-            gap: 10px;
-            .jobMini{
-                Img{
-                width: 120px;
-            }
-        }
-        }
+    label{
+        width: 140px;
+        padding-left: 20px;
+    }        
+         
 }
-// MediaQ_OfertasLab
-.ofertGrid{
-    h5{
-        width: 700px;
-
-    }
 }
-// MediaQ_TV_Cv //
-.cvGrid{
+.mainContain{
+    width: 100%;
+    .busqSect{
+     width: 70%;
+     margin: 50px;
+     aspect-ratio: 2/1;
+     .izq{
+         width: 80%;
+     }
+     .der{
+         width: 79%;
+         strong{
+             font-size: 25px;
+         }
+         article{
+             width: 80%;
+             font-size: 16px;
+         }
+         button{
+             width: 30%;
+             height: 15%;
+             a{
+                 font-size: 10px;
+             }
+         }
+ 
+     }
+    }
+ }
+// Pagina Empresas //
+.groupStar{
     img{
-        width: 350px;
-    }
-    article{
-        width: 350px;
-    }
-    
-}
-.profile{
-    img{
-        padding-top: 50px;
+        width: 15px;
     }
 }
-.profileCv{
-    article2{
-        width: 400px;
-        height: 250px;
-    }
-}
-// MEDIA OFERT_LAB
-.gridSection2{
-    width: 768px;
-}
+// Pagina Empresas //
 
-
-// MEDIA Q FOOTER
-footer{
-    @include w-h(768px,100px);
-    section2{
-        .redPart{                  
-            .redes{
-                width: 100vw;
-                height: 300px;               
-            ul{
-                li{
-                    width: 150px;
-                    font-size: 12px;
-                }                   
-            }               
+//Footer//
+.sectionFoot{
+    .footer{
+        @include flex3(row,center,center);
+        .list1{
+            strong{
+                font-size: 16px;
+            }           
+        }         
+        height: 200px;   
+        ul{
+            li{
+                font-size: 10px;
             }
-            }
-    }   
-        .footText{
-            width: 500px;
-            p{
-                font-size: 10   px;
-            }
-            
         }
+    }
 }
 }
 
-    

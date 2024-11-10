@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 
 $tipoSitio:(
-    fuente1:Shrikhand,
+    fuente1:Anton,
     fuente2:Alumni+Sans+Pinstripe,
     fuente3:Oxygen,
+    fuente4:Josefin,
+    fuente5:DM Serif Text,
 );
 
 $colorFuente:(
@@ -14,6 +19,9 @@ $colorFuente:(
     color2:yellowgreen,
     color3:yellow,
     color4:orange,
+    color5:rgb(110, 100, 100),
+    color6: rgb(85, 80, 80),
+    color7: black,
 );
 
 

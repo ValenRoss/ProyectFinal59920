@@ -1,249 +1,243 @@
-
-.card{
+// Index Search //
+.mainContain{
+    @include flex3(column,center,center);
+    container-type: inline-size;
+    container-name: cardContain;
+   .busqSect{
     @include flex3(row,center,center);
-    @include w-h(400px,200px);
-    padding-top: 50px;
-    gap: 10px;
-    .box{
-        width: 100px;
-        height: 100px;
-        background-image: url(../assets/img/faceicon.jpg);
-        background-size: 150px;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 100%;
-    }
-    .icon{
-        @include flex3(column,center,center)
-    }
-
-    .icon spam{
-        width: 12px;
-    }
-    .count{
-        color: yellowgreen;
-    }
-    .icon img{
-        width: 30px;
-    }
-    .text{
-        @include flex3(row,center,center);
-        background-color: transparent;
-        width: 300px;
-        height: 100px;      
-        border-radius: 35px;    
-        border: 2px solid map-get($colorSitio , colorbox1);      
-        p{  
-            width: 70%;
-            font-size: medium;
-            font-weight: bold;
-            color: map-get($colorSitio , colorbox1);
-        }
-    }
-}
-
-.card2{
-    @extend .card;
-    .box{
-    background-image: url(../assets/img/empIcon2.jpg);
-    }
-    .text{
-        border: 2px solid map-get($colorSitio , colorbox2);
-        p{
-            color: map-get($colorSitio , colorbox2);
-        } 
-        }
-}
-.card3{
-    @extend .card2;
-    .box{
-        background-image: url(../assets/img/faceicon3.jpg);
-        }
-    .text{
-        border: 2px solid map-get($colorSitio , colorbox3);
-        p{
-            color: map-get($colorSitio , colorbox3);
-        } 
-    }
-}
-.company{
-    img{
-        padding-top: 20px;
-    }
-    
-}
-.cardComp 
-    { 
-    @include flex3(column,center,center);
-    border-color: 1px solid yellowgreen;
-    padding-top: 50px;
-    span{       
-        width: 300px;
-    }
-    .compList{  
-        padding-top: 20px;
-        ul{
-            @include flex3(row,center,center); 
-            @include w-h(350px,60px);
-            border: 2px solid yellowgreen;
-            border-radius: 30px;   
-            gap: 25px; 
-            list-style: none;
-            text-decoration: none;
-            .like{      
-                img{
-                width: 30px;
-                }
-            } 
-            li{
-                a{
-                @include aText(map-get($colorSitio, color2));             
-                }       
-            } 
-        
-        } 
-    }  
-}
-.topJob{
-    @include flex3(row,center,center);
-    gap: 10px;
-    background-color: blueviolet;
-    border-radius: 40px;
-    border:  2px solid yellow;
-    width: 550px;
-    height: 70px;
-    .number{
-        @include flex3(row,center,center);  
-        @include w-h(50px,50px);   
-        .circle{
-                background-color: rgb(35, 35, 70);
-                width: 50px;
-                height: 50px;
-                border-radius: 50px;    
-        }   
-        span{
-                font-size: 40px;
-                padding-top: 50px;
-                color: rgb(197, 178, 3);
-                padding-left: 15px;
-                border: 20px;
-        }
-    }
-    
-    .star{
-        @include flex3(row,center,center);
-
-    }
-    div{     
-      img{
-            width: 50px;
-        }
-
-    }
-    .cargo{
-        font-size: 20px;
-        color: aliceblue;
-    }
-    .rate{
-        font-size: 20px;
-        color: rgb(199, 233, 7);
-    }
-}
-.botones{
-    @include flex3(row,center,center);
-    gap: 10px;
-
-   button{
-        all: unset;
-        @include flex3(column,center,center);
-        margin-top: 20px;
-        width: 80px;
-        height: 40px;
-        background-color:yellow;
-        border-radius: 70px;
-        }
-}
-
-.topJob1{
-    @extend .topJob;
-    margin-top: 50px;
-    
-}
-.topJob2{
-    @extend .topJob1;
-}
-// Style_OfertasLab
-.banOfer1{
-    @include flex3(column,center,center);
-    width: 700px;
-    height: 150px;
-    padding-top: 100px;  
-    .part1{
-        width: 150px;
-        aspect-ratio: 1/1;
-        img{
-            width: 150px;
-            
-        }
-    }
-    .part2{
-        img{
-            width: 550px;
-            height: 150px;
-        }
-    }
-}
-.bannAlign{
-    @include flex3(column,center,center);
-    width: 750px;   
-    gap: 20px;
-    span{
-        color: map-get($colorFuente , color0)
-    }
-    .bann2{
-    @include flex3(column,center,center);
-    width: 750px;
-    border: 2px solid rgb(164, 245, 13);
-    padding: 10px;
-    border-radius: 20px;
-        .banOfer1{
-            @include flex3(row,center,center);
-            width: 750px;
-            height: 200px;   
+    width: 80%;
+    aspect-ratio: 2/1;
+    border-radius: 10px;
+    .articleCont{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+        width: 100%;
+        background-color: #f4f7f5;
+        article{     
+            color: #8a8b89;
+            font-size: 30px;
+            width: 100%;
+            border-radius: 20px;
+            strong{
+                color: #5a5c61;
+                font-family: map-get($tipoSitio , fuente2 );
+                font-size: 32px;
             }
-        .jobDescript{
-            width: 70%;
-            padding-top: 40px;
             
         }
-        }       
         button{
-            width: 80px;
-            aspect-ratio: 2/1;
-            background-color: rgb(141, 226, 43);
-            border-radius: 30px;
-            color: rgb(29, 42, 54);
-        }
-    }
-                
-        .imgCard{
-            img{
-                width: 10vw;
-                aspect-ratio: 1/1;
+            background-color: blueviolet;
+            a{
+                color: #f4f7f5;
+                text-decoration: none;
             }
         }
-    button{
-        all:unset;
-        @include flex3(column,center,center);
-        width: 60px;
-        height: 30px;
-        background-color: blueviolet;
-        border-radius: 20px;
-        a{
-        color: rgb(220, 250, 50);
-        text-decoration: none;
+    .imageCont{ 
+        width: 100%;
+        img{
+            width: 100%;
+
         }
     }
+    .buttonClass{
+        @include flex4(row,center,center,10px);
+        button{
+            width: 40%;
+            :hover{
+                @include flex3(row,center,center);
+                width: 100%;
+                aspect-ratio: 3/1;
+                border-radius: 40px;
+                background-color: #0fec72;
+                color: #292723;
+            }
+        }
+    }
+        
+    }
+    }
+}
+// Ofert Lab Styles
+.bannerMain{
+    display: flex;
+    img{
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+        justify-content: center;
+        border-radius: 50%;
+
+    }
+}
+.sectionGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));   
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+    padding-top: 100px;
+    width: 100%;
+    .card1{
+        @include flex3(column,center,center);
+        width: 200px;
+        object-fit: cover;
+        height: auto;
+        background-color: #c2d18c;
+        border: 2px solid #fdd86e;
+        border-radius: 10px;
+        box-shadow: 2px 1px 1px 1px rgb(185, 187, 219);
+        .cardImg{     
+            @include flex3 (column,center,center);
+            img{
+                width: 70%;
+                padding-top: 10px; 
+            }
+        }
+        .cardCont{
+            @include flex3(column,center,center);
+            text-align: center;
+            width: 200px;
+            height: 300px;
+            border-radius: 10px;
+            p{
+                width: 100%;
+                margin-top: 20px;
+                @include flex3(column,center,center);
+                font-family: map-get($tipoSitio , fuente5 );
+                text-align: center;
+                font-size: 30px;
+                color: map-get($colorFuente ,color5)
+            }
+            article{
+                width: 100%;
+                text-align: center;
+                text-wrap: pretty;
+                font-size: 16px;
+                strong{
+                    font-size: 20px;
+                    color: map-get($colorFuente ,color3)
+                }
+                color: map-get($colorFuente ,color6)
+            }
+            button{             
+                width: 100px;
+                height: 50px;
+                margin: 20px;
+                background-color: blueviolet;
+                a{
+                    text-decoration: none;
+                    color: #0fec72;
+                }
+            }  
+        }
+    }
+    .card2{
+        @extend .card1;
+        padding: 50px;
+        margin: 20px;
+    }
+    .card3{
+        @extend .card1;
+    }
+    .card4{
+        @extend .card1;
+    }
+}
+.cardPostGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    width: 80%; 
+    max-width: 800px;
+    min-width: 200px;
+    background-color: hsl(187, 89%, 56%);
+    margin: auto;
+    margin-top: 100px;
+    container-type: inline-size;
+    container-name: cardQ;
+    .cardPost{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+        width: 100%;
+        gap: 5px;
+        align-items: center;
+        .opinionGirl{
+            img{
+                width: 90%;
+                max-width: 800px;
+                border-radius: 90%;
+            }
+        }
+        span{
+            color: map-get($colorFuente , color0 );
+            font-family: map-get($tipoSitio , fuente5 );
+            font-size: 35px;
+            text-wrap: pretty;
+            width: 60%;
+            padding: 20px;
+        }
+        p{
+            color: #f4f7f5;
+            font-size: 100px;
+            margin: auto;
+        }
+    }
+}
+
+.bannSection{
+    @include flex3(column,center,center);
+    gap:50px;
+    margin: auto;
+    .bannPost{
+        @include flex3(column,center,center);
+        width: 100%;
+        .circle{
+            @include flex3(row,center,center);
+            img{
+                width: 40%; 
+            }
+        }
+        p{
+            color: #08c25c;
+            font-size: clump(40px, 24px,30px);
+            font-family: map-get($tipoSitio, fuente5); 
+        }
+        .likeSect{
+            @include flex3(row,center,center);
+            border: 1px solid #e9bf5b;
+            height: 50px;
+            width: 250px;
+            border-radius: 10px;
+            background-color: #c1e6d2;
+            padding-top: 10px;
+            margin-top: 20px;
+            gap: 10px;
+            .icon{
+                img{
+                    width: 35px;
+                }
+            }
+            span{
+                color: map-get($colorFuente , color5 );
+                font-size: 20px
+
+            }
+        }
+        
+    }
+    .bannPost2{
+        @extend .bannPost;
+        margin-top: 70%;
+    }
+    .bannPost3{
+        @extend .bannPost;
+    }
+}
+// Index End //
+
+//Ofertas Lab Style //
+
+//Ofertas Lab Style End //
+
 
     
 // Style Pag Empresas
@@ -394,7 +388,8 @@ button{
     color: aliceblue;
     }
 }
-// RRHH Style
+
+// }RRHH Style
 
   
     

@@ -10,22 +10,24 @@
 </head>
 <body>
     <header>
-        <nav class="navBar">
+        <nav class="naviBar">
             <ul>
-                <button><a href="../index.html">Index</a></button>
+                <button><a href="../index.html">Inicio</a></button>
                 <button><a href="../pages/ofertasLab.html">Destacados</a></button>
                 <button><a href="../pages/empresas.html">Empresas</a></button>
-                <button><a href="#">RRHH</a></button>
+                <button><a href="../pages/rrhh.html">RRHH</a></button>
                 <button><a href="../pages/tuCv.html">Tu Cv</a></button>
-                <label for="">Buscar<input type="text" placeholder="Busca Aqui"></label>                           
+                <label for=""><img src="../assets/img/searIcon.svg" alt=""><input type="text" placeholder="Busca Aqui"></label>                           
             </ul>
         </nav>
     </header>
     <main>
-        <div class="gridRrhh">
+        <div class="flexRrhh">
             <div class="RhBan"><img src="../assets/img/rrhhBan.jpg" alt="imagen de manos con texto"></div>
-            <h6>Nuestra Vision</h6>
+            <h3>Nuestra Vision</h3>
             <article>"La unidad es la fuerza. Cuando hay trabajo en equipo y colaboración maravillosa, cosas maravillosas pueden lograrse."</article>
+        </div>
+        <div class="centralGrid">
             <div class="banR">
                 <div class="dirImg"><img src="../assets/img/rrhhDirector.jpg" alt="foto de director concentrado"></div>
                 <span>
@@ -40,6 +42,8 @@
                     <p2>Supervisora de RRHH</p>
                 </span>
             </div>
+        </div>
+        <div class="teamGrid">
             <span class="teamS">Nuestro Equipo Comparte Nuestra Vision</span>
             <div class="team">
                 <div><img src="../assets/img/teamico1.jpg" alt="icono con rostro de persona sonriendo"></div>
@@ -50,42 +54,37 @@
                 <div><img src="../assets/img/teamico6.jpg" alt="icono con rostro de oficinista en su jornada"></div>
                 <div><img src="../assets/img/teamico7.jpg" alt="icono con rostro de mujer en su trabajo"></div>
             </div>
+        </div>
             <span class="teamF">"Te esperamos"</span>
             <button class="joinUs"><a href="">Trabaja con Nosotros</a></button>
-        </div>
     </main>
+    <!-- >> Seccion Footer >>  -->
     <footer>
-        <section2>          
-            <div class="redPart">                
-                <div class="redes">
-                    <div class="line"></div>
-                    <ul>
-                        <div><img src="../assets/img/redes1.png" alt=""></div>
-                        <div><img src="../assets/img/redes2.png" alt=""></div>
-                        <div><img src="../assets/img/redes3.png" alt=""></div>
-                    </ul>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                    </ul>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                    </ul>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                    </ul>   
-                    <span class="footText"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, facilis sequi! Vitae cum hic suscipit repellendus omnis</p></span>                  
-                </div>                            
-            </div>                           
-        </section>            
+        <section class="sectionFoot">  
+            <div class="footer">     
+            <ul class="list1">
+                <P><strong>Nuestras Oficinas</strong></P>
+                <div class="line2"></div>
+                <li>Blvd. San Juan 1378</li>
+                <li>Bv Castro Barros 332, X5000 Córdoba</li>
+                <li>Humberto 1º 650, X5000 Córdoba</li>
+            </ul>
+            <ul class="list2">
+                <P><strong>Contacto</strong></P>
+                <div class="line2"></div>
+                <li>+549 - 3794555891</li>
+                <li>0 - 800 - 999 - 4444</li>
+                <li>@tujobs_js</li>
+            </ul>
+        </section>
+            <div class="redPart">
+                <div class="line"></div>
+                <div class="redIco"><img src="../assets/img/redes1.png" alt=""></div>
+                <div class="redIco"><img src="../assets/img/redes2.png" alt=""></div>
+                <div class="redIco"><img src="../assets/img/redes3.png" alt=""></div>            
+                <div class="line"></div>
+            </div>
+        </div>
     </footer>
 </body>  
 </html>     

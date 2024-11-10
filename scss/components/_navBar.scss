@@ -1,35 +1,58 @@
-.navBar{
-    @include flex2(row,center);
-    background-color: map-get($colorSitio ,color3);
-    @include w-h(100vw,50px);
+    .naviBar{
+        @include flex3(row,center,center);
+        height: 50px;
+        background-color: rgb(97, 97, 85);
         ul{
-            @include w-h(100%,100%);
-            @include flex4(row,center,center,50px);
-            a{
-                text-decoration: none;              
-                color: black;           
-            }
-        button{
-            @include button5(120px,40px,yellow,black,40px);
-            font-family: map-get($fuentesStio, fuente3);
-            font-size: 12px;          
+            @include flex4(row,center,center,20px);
+            width: 80vw;
+            button{
+                all: unset;
+                @include flex3(row,center,center);
+                width: 80px;
+                height: 40px;            
+                }       
+                a{
+                    color: yellow;
+                    font-family: map-get($tipoSitio, fuente2);
+                    text-decoration: none;
+                } 
         }
-        input{
-            background-color: yellow,
-        }
-        label{
-            @include flex2(row,center);
-            @include w-h(80px,50px);
-            color: rgb(242, 242, 228);
-            padding-left: 100px;
-            font-size:map-get($fuentesStio , md);
-            font-family: map-get($fuentesStio, fuente3);
-        }
-       
-        }
-                   
+                            
+            
+            label{
+                @include flex4(row,space-around,center,10px);
+                img{
+                    width: 30px;
+                    aspect-ratio: 1/1;
                 }
+                width: 200px;
+                input{
+                    width: 80%;
+                    background-color: yellow;
+                }
+                placeholder{
+                    background-color: yellow;
+                }
+            }
+            
         
+        button:hover{
+            @include flex3(row,center,center);
+                    background-color: rgb(188, 192, 196);  
+                    width: 80px;
+                    height: 50px;
+                    a{
+                        color: black;
+                        text-decoration: none;
+                        all: unset;
+                    }
+
+        }
+    }
+    
+
+    
+
         
 
 
