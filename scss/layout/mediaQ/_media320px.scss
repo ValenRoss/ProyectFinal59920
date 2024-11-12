@@ -114,27 +114,4 @@
 }
 }
 
-.cardPostGrid{
-    background-color: hsl(246, 89%, 56%);
-    min-width: 300px;
-    .cardPost{
-        @include flex3(column,center,center);
-        .opinionGirl{
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));  
-            min-width: 300px;
-            img{
-                width: 50%;
-                min-width: 150px;
-            }  
-        }
-            .opinioText{
-                @include flex3(column,center,center);
-                font-size: 25px;
-                width: 25%;
-                color: map-get($colorFuente , color0 );
-
-    }
-    }   
-}
 }

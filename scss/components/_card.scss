@@ -145,44 +145,21 @@
     }
 }
 .cardPostGrid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    width: 80%; 
-    max-width: 800px;
-    min-width: 200px;
-    background-color: hsl(187, 89%, 56%);
-    margin: auto;
-    margin-top: 100px;
-    .cardPost{
-        @include flex3(row,center,center);
-        width: 80%;
-        min-width: 300px;
-        gap: 5px;
-        align-items: center;
-        .opinionGirl{
-            width: 80%;
-            min-width: 300px;
-            img{
-                width: 50%;
-                max-width: 800px;
-                min-width: 150px;
-                border-radius: 90%; 
-                margin: auto;
-            }
-        }
-        span{
-            color: map-get($colorFuente , color0 );
-            font-family: map-get($tipoSitio , fuente5 );
-            font-size: 35px;
-            text-wrap: pretty;
-            width: 60%;
-            padding: 20px;
-        }
-        p{
-            color: #f4f7f5;
-            font-size: 100px;
-            margin: auto;
-        }
+    padding-top: 100px;
+    .opinioText{
+        @include flex3(column,center,center);
+        color: map-get($colorFuente , color4 );
+        font-size: 45px;
+        margin: auto;
+        width: 70%;
+    }
+    .artOpin{
+        @include flex3(column,center,center);
+        color: map-get($colorFuente , color1 );
+        font-size: 30px;
+        width: 50%;
+        margin: auto;
+
     }
 }
 
@@ -190,6 +167,8 @@
     @include flex3(column,center,center);
     gap:50px;
     margin: auto;
+    height: 800px;
+    padding-bottom:  100px;
     .bannPost{
         @include flex3(column,center,center);
         width: 100%;
@@ -325,13 +304,14 @@
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     padding-top: 100px;
     width: 70%;
-    // aspect-ratio: 6 / 1;
     margin: auto;
+    min-width: 300px;
     .dirImg{
         img{
             @include flex3(column,center,center);
             width: 30%;
             border-radius: 150px;
+            margin: auto;
         }
     }
     .artFrase{
@@ -369,6 +349,7 @@
     color: map-get($colorFuente, color1);
     font-family: map-get($tipoSitio , fuente3);
     font-size: 25px;
+    padding-bottom: 50px;
 
 }
 button{
@@ -377,10 +358,6 @@ button{
     height: 50px;
     border-radius: 60px;
 }
-
-
-
-
 .botonPagF{
     @include flex3(row,center,center);
     gap: 5px;

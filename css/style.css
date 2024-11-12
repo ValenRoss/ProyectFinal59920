@@ -114,7 +114,8 @@ body {
 
 .sectionFoot {
   height: 200px;
-  background-color: #616155; }
+  background-color: #616155;
+  padding-top: 30px; }
   .sectionFoot .footer {
     display: flex;
     flex-direction: row;
@@ -291,7 +292,7 @@ h2 {
   width: 100%;
   padding-top: 40px;
   width: 100%; }
-  .ofertContain h5 {
+  .ofertContain h1, .ofertContain .artEmp {
     font-size: 30px;
     width: 80%;
     max-width: 800px;
@@ -568,10 +569,10 @@ h1, .artEmp {
   min-width: 300px;
   gap: 10px;
   margin: auto; }
-  .flexRrhh h6 {
+  .flexRrhh h3 {
     font-size: 25px;
     color: yellowgreen; }
-  .flexRrhh article {
+  .flexRrhh .artVision {
     font-size: 1.5625rem;
     color: antiquewhite;
     width: 50%;
@@ -583,7 +584,8 @@ h1, .artEmp {
     align-items: center; }
     .flexRrhh .RhBan img {
       width: 1%;
-      min-width: 300px; }
+      min-width: 300px;
+      margin: auto; }
 
 .centralGrid {
   display: grid;
@@ -612,6 +614,8 @@ h1, .artEmp {
   min-width: 120px;
   height: 50px;
   margin-bottom: 50px; }
+  .joinUs a {
+    text-decoration: none; }
 
 .naviBar {
   display: flex;
@@ -825,43 +829,25 @@ h1, .artEmp {
     margin: 20px; }
 
 .cardPostGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  width: 80%;
-  max-width: 800px;
-  min-width: 200px;
-  background-color: #2bdbf3;
-  margin: auto;
-  margin-top: 100px; }
-  .cardPostGrid .cardPost {
+  padding-top: 100px; }
+  .cardPostGrid .opinioText {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    min-width: 300px;
-    gap: 5px;
-    align-items: center; }
-    .cardPostGrid .cardPost .opinionGirl {
-      width: 80%;
-      min-width: 300px; }
-      .cardPostGrid .cardPost .opinionGirl img {
-        width: 50%;
-        max-width: 800px;
-        min-width: 150px;
-        border-radius: 90%;
-        margin: auto; }
-    .cardPostGrid .cardPost span {
-      color: white;
-      font-family: DM Serif Text;
-      font-size: 35px;
-      text-wrap: pretty;
-      width: 60%;
-      padding: 20px; }
-    .cardPostGrid .cardPost p {
-      color: #f4f7f5;
-      font-size: 100px;
-      margin: auto; }
+    color: orange;
+    font-size: 45px;
+    margin: auto;
+    width: 70%; }
+  .cardPostGrid .artOpin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aquamarine;
+    font-size: 30px;
+    width: 50%;
+    margin: auto; }
 
 .bannSection {
   display: flex;
@@ -869,7 +855,9 @@ h1, .artEmp {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  margin: auto; }
+  margin: auto;
+  height: 800px;
+  padding-bottom: 100px; }
   .bannSection .bannPost, .bannSection .bannPost2, .bannSection .bannPost3 {
     display: flex;
     flex-direction: column;
@@ -984,14 +972,16 @@ h1, .artEmp {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding-top: 100px;
   width: 70%;
-  margin: auto; }
+  margin: auto;
+  min-width: 300px; }
   .banR .dirImg img {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 30%;
-    border-radius: 150px; }
+    border-radius: 150px;
+    margin: auto; }
   .banR .artFrase {
     width: 100%; }
     .banR .artFrase p {
@@ -1024,7 +1014,8 @@ h1, .artEmp {
 .teamF {
   color: aquamarine;
   font-family: Oxygen;
-  font-size: 25px; }
+  font-size: 25px;
+  padding-bottom: 50px; }
 
 button {
   display: flex;
@@ -1163,30 +1154,7 @@ button {
   .redPart .line {
     width: 40px; }
   .redPart .redIco img {
-    width: 20px; }
-  .cardPostGrid {
-    background-color: #3f2bf3;
-    min-width: 300px; }
-    .cardPostGrid .cardPost {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .cardPostGrid .cardPost .opinionGirl {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        min-width: 300px; }
-        .cardPostGrid .cardPost .opinionGirl img {
-          width: 50%;
-          min-width: 150px; }
-      .cardPostGrid .cardPost .opinioText {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 25px;
-        width: 25%;
-        color: white; } }
+    width: 20px; } }
 
 @container cardContain(width > 600px) {
   article {
