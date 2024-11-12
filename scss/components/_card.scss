@@ -61,8 +61,9 @@
 .bannerMain{
     display: flex;
     img{
-        width: 100%;
+        width: 80%;
         max-width: 800px;
+        min-width: 300px;
         margin: auto;
         justify-content: center;
         border-radius: 50%;
@@ -145,26 +146,28 @@
 }
 .cardPostGrid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     width: 80%; 
     max-width: 800px;
     min-width: 200px;
     background-color: hsl(187, 89%, 56%);
     margin: auto;
     margin-top: 100px;
-    container-type: inline-size;
-    container-name: cardQ;
     .cardPost{
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
-        width: 100%;
+        @include flex3(row,center,center);
+        width: 80%;
+        min-width: 300px;
         gap: 5px;
         align-items: center;
         .opinionGirl{
+            width: 80%;
+            min-width: 300px;
             img{
-                width: 90%;
+                width: 50%;
                 max-width: 800px;
-                border-radius: 90%;
+                min-width: 150px;
+                border-radius: 90%; 
+                margin: auto;
             }
         }
         span{
@@ -318,23 +321,24 @@
 }
 // RRHH Style
 .banR{
-    @include flex3(row,center,center);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     padding-top: 100px;
-    gap: 20px;
-    width: 50vw;
-    aspect-ratio: 5 / 1;
+    width: 70%;
+    // aspect-ratio: 6 / 1;
+    margin: auto;
     .dirImg{
         img{
-            width: 150px;
+            @include flex3(column,center,center);
+            width: 30%;
             border-radius: 150px;
         }
     }
-    span{
-        @include flex3(column,center,center);
+    .artFrase{
+        width: 100%;
         p{
             font-size: 1.375rem;
             color: #c2d18c;
-            width: 500px;
         } 
         p2{
             font-size: 18px;

@@ -10,29 +10,28 @@
 </head>
 <body>
     <header>
-        <nav class="navBar">
+        <nav class="naviBar">
             <ul>
-                <button><a href="../index.html">Index</a></button>
+                <button><a href="../index.html">Inicio</a></button>
                 <button><a href="../pages/ofertasLab.html">Destacados</a></button>
-                <button><a href="./empresas.html">Empresas</a></button>
+                <button><a href="../pages/empresas.html">Empresas</a></button>
                 <button><a href="../pages/rrhh.html">RRHH</a></button>
-                <button><a href="#">Tu Cv</a></button>
-                <label for="">Buscar<input type="text" placeholder="Busca Aqui"></label>                           
+                <button><a href="../pages/tuCv.html">Tu Cv</a></button>
+                <label for=""><img src="../assets/img/searIcon.svg" alt=""><input type="text" placeholder="Busca Aqui"></label>                           
             </ul>
         </nav>
     </header>
     <main>
-        <div class="cvGrid">
+        <div class="cvFlex">
             <h2>Bienvenido/a te ayudaremos con tu Cv</h2>
             <div class="cvTips">
                 <div class="cvImg"><img src="../assets/img/cvImg1.png" alt="imagen de chica con curriculum en mano"></div>          
-                <article><strong>Todas</strong> las personas que son parte del <strong>mundo laboral</strong> o desean integrarse a él saben que escribir un currículum es <strong>indispensable</strong> para conseguir un empleo. No obstante, hacer un CV no solo <strong>significa</strong> tus empleos previos en un documento y enviarlo a la empresa de tu elección. Es un trabajo <strong>meticuloso</strong> que requiere conocer ciertos <strong>trucos</strong> y secretos del mundo del reclutamiento.
-                Por ello, en esta guía te daremos <strong>25</strong> consejos para hacer un currículum y <strong>deslumbrar</strong> al reclutador. Desde qué información <strong>incluir</strong> en los datos personales hasta qué tipo de <strong>formato</strong> para curriculum vitae es el ideal para <strong>ti</strong>, este artículo te <strong>revelará</strong> todo lo que debes saber para hacer tu CV. </article>
+                <article class="cvArt"><strong>Todas</strong> las personas que son parte del <strong>mundo laboral</strong> o desean integrarse a él saben que escribir un currículum es <strong>indispensable</strong> para conseguir un empleo. No obstante, hacer un CV no solo <strong>significa</strong> tus empleos previos en un documento y enviarlo a la empresa de tu elección. Es un trabajo <strong>meticuloso</strong> que requiere conocer ciertos <strong>trucos</strong> y secretos del mundo del reclutamiento.</strong></article>
             </div>       
         </div>
         <div class="profileCv">
             <div class="profile"><img src="../assets/img/profileimg.png" alt="imagen de perfiles en negro"></div>
-            <article2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eum consequatur id, minus rem sit reprehenderit iusto labore incidunt, optio ipsa at tenetur sint. Quae, velit! Eius cumque perspiciatis mollitia?</article>
+            <article class="artCvInfo">A continuacion te solicitaremos unos datos basicos para proceder en tu busqueda laboral!</article>
             <div class="fileUp"><img src="../assets/img/file-upload.png" alt="imagen de subir archivo"></div>
             <label for="file"></label><input type="file">
         </div>
@@ -41,84 +40,45 @@
                 <label for="Tu Nombre">Nombre</label><input type="text">
                 <label for="Tu Nombre">Apellido</label><input type="text">
             </form>
-        </section>   
-        <section2>
-            <div class="checkList">
-                <label for="">Lorem</label><input type="text">
-                <label for="">Lorem</label><input type="text">
-                <label for="">Lorem</label><input type="text">
-                    <div class="skills">
-                        <div class="checkImg"><img src="../assets/img/checkList.png" alt="imagen de mano completando lista"></div>
-                        <h3>Dejanos conocer tus habilidades</h3>
-                        <div class="check">
-                            <label for="">Lorem</label><input type="checkbox">
-                            <label for="">Lorem</label><input type="checkbox">
-                            <label for="">Lorem</label><input type="checkbox">
-                            <label for="">Lorem</label><input type="checkbox">
-                        </div>              
-                        <div class="check">
-                            <label for="">Lorem</label><input type="checkbox">
-                            <label for="">Lorem</label><input type="checkbox">
-                            <label for="">Lorem</label><input type="checkbox">
-                            <label for="">Lorem</label><input type="checkbox">
-                        </div>   
-                    </div>    
-                <div class="idiomas">
-                    <div class="talkGirl"><img src="../assets/img/talkGirl.png" alt="imagen de chica con celular pensando"></div>
-                    <h4>Que idiomas manejas?</h4>
-                    <div class="check">
-                        <label for="">Lorem</label><input type="checkbox">
-                        <label for="">Lorem</label><input type="checkbox">
-                        <label for="">Lorem</label><input type="checkbox">
-                        <label for="">Lorem</label><input type="checkbox">                    
-                    </div>
-                        <h5>Nivel del mismo?</h5>
-                        <div class="check">
-                            <label for="">Lorem</label><input type="checkbox">
-                            <label for="">Lorem</label><input type="checkbox">
-                            <label for="">Lorem</label><input type="checkbox">                    
-                        </div>                     
-                    </div>
-                    <div class="contact">
-                        <label for="">Email</label><input type="text">
-                        <label for="">Celular</label><input type="text">
-                    </div>
-                </div>
+            <div class="subForm">
+                <label for="Tu Nombre">DNI</label><input type="text">
+                <label for="Tu Nombre">Fecha de Nacimiento</label><input type="text">
+                <label for="Tu Nombre">Direccion</label><input type="text">
+                <label for="Tu Nombre">Provincia</label><input type="text">
+                <label for="Tu Nombre">Email</label><input type="text">
+                <button class="buttonCv"><a href="">Enviar</a></button>
             </div>
+        </section>   
+        <section class="skillsCv">
         </section>
     </main>
+    <!-- >> Seccion Footer >>  -->    
     <footer>
-        <section2>          
-            <div class="redPart">                
-                <div class="redes">
-                    <div class="line"></div>
-                    <ul>
-                        <div><img src="../assets/img/redes1.png" alt="imagen de icono de red social facebook"></div>
-                        <div><img src="../assets/img/redes2.png" alt="imagen de icono de red social instagram"></div>
-                        <div><img src="../assets/img/redes3.png" alt="imagen de icono de red social twitter"></div>
-                    </ul>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                    </ul>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                    </ul>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                    </ul>   
-                    <span class="footText"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, facilis sequi! Vitae cum hic suscipit repellendus omnis</p></span>                  
-                </div>                            
-            </div>                           
-        </section>            
-    </footer>
+        <section class="sectionFoot">  
+            <div class="footer">     
+            <ul class="list1">
+                <P><strong>Nuestras Oficinas</strong></P>
+                <div class="line2"></div>
+                <li>Blvd. San Juan 1378</li>
+                <li>Bv Castro Barros 332, X5000 Córdoba</li>
+                <li>Humberto 1º 650, X5000 Córdoba</li>
+            </ul>
+            <ul class="list2">
+                <P><strong>Contacto</strong></P>
+                <div class="line2"></div>
+                <li>+549 - 3794555891</li>
+                <li>0 - 800 - 999 - 4444</li>
+                <li>@tujobs_js</li>
+            </ul>
+        </section>
+            <div class="redPart">
+                <div class="line"></div>
+                <div class="redIco"><img src="../assets/img/redes1.png" alt=""></div>
+                <div class="redIco"><img src="../assets/img/redes2.png" alt=""></div>
+                <div class="redIco"><img src="../assets/img/redes3.png" alt=""></div>            
+                <div class="line"></div>
+            </div>
+        </div>
+    </footer> 
 </body>  
 </html> 

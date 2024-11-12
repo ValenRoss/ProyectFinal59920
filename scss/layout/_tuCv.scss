@@ -1,41 +1,62 @@
-.cvGrid{
+.cvFlex{
     @include flex3(column,center,center);
+    width: 80%;
+    min-width: 300px;
+    max-width: 800px;
     padding-top: 100px;    
-        
+    margin: auto;
+    }
+    .cvImg{
+        img{    
+        width: 100%;
+        min-width: 200px;
+        mask-image: linear-gradient(black 80%, tranparent);
+
+        }
     }
     h2{
         color: yellow;
         padding-top: 20px;
     }
-    article{
+    .cvArt{
+        margin: auto;
         padding-top: 20px;
         padding-left: 10px;
         color: yellow;
-        width: 25vw;  
+        width: 70%;  
+        min-width: 100px;
         font-size: 20px; 
+        text-wrap: pretty;
         strong{
             color: aliceblue;
             font-size: 25px;
         }
     }
-    img{
-        width: 400px;            
-    }
 
 .cvTips{
     padding-top: 50px;
-    @include flex3(row,center,center); 
+    @include flex3(column,center,center); 
+    .cvImg{
+        width: 40%;
+        min-width: 200px;
+    }
     }
 .profileCv{
-    @include flex3(column,center,center);
+    @include flex3(column,center,center); 
     .profile{
+        @include flex3(column,center,center);
         img{
-            width: 15vw;
+            width: 40%;
+
     }
         }
-    article2{
-        width: 20vw;
+    .artCvInfo{
+        @include flex3(column,center,center);
+        width: 70%;
+        min-width: 300px;
+        font-size: 25px;
         color: yellowgreen;
+        margin: auto;
     }
     label{
         all: unset;
@@ -45,14 +66,17 @@
         @include flex3(column,center,center);
         padding: 25px;
         img{
-            width: 50px;
+            width: 25%;
         }
     }
 } 
     
         .formCv{
             @include flex3(row,center,center);
-            gap: 12px;
+            margin: auto;
+            width: 50%;
+            gap: 10px;
+            margin-top: 20px;
             label{
                 color: yellowgreen;
             }
@@ -62,57 +86,29 @@
             }
                              
             }
-        .checkList{
-            @extend .formCv;
-            @include flex3(column,center,center);
-            height: 400px;
-            gap: 10px;
+        .subForm{
+            @include flex4(column,center,center,10px);
+            margin: 25px;
+            label{
+                color: yellowgreen;
+            }
             input{
-                width: 120px;             
+                width: 90px;
+                background-color: yellowgreen;
             }
-            .skills{    
-                @include flex3(column,center,center);
-                width: 400px;
-                height: 250px;
-                border: 2px solid yellowgreen;
-                border-radius: 20px;
-                .checkImg{
-                    img{            
-                    width: 150px;
-                    }
-                }
-                h3{
-                    color: yellowgreen; 
+            .buttonCv{
+                background-color: aquamarine;
+                width: 5%;
+                height: 40px;
+                min-width: 80px;
+                a{
+                    color: map-get($colorFuente , color5 );
+                    text-decoration: none;
                 }
             }
-            .check{
-                @include flex3(row,center,center);
-                padding-top: 10px;
-                width: 350px;            
-            }
-            h4{
-                @extend h3;
-            }
-        
-            .idiomas{
-                @extend .skills;
-                height: 400px;
-                .talkGirl{
-                    @extend .checkImg;
-                    img{               
-                    border-radius: 100px;
-                    }                  
-                }
-                h5{
-                    padding-top: 20px;
-                    @extend h4;
-                }
-            }
-            .contact{
-                @include flex3(column,center,center);
-            }
-            
         }
+
+        
             
        
             

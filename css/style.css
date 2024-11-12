@@ -170,47 +170,71 @@ body {
   .redPart .redIco img {
     width: 30px; }
 
-.cvGrid {
+.cvFlex {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 100px; }
+  width: 80%;
+  min-width: 300px;
+  max-width: 800px;
+  padding-top: 100px;
+  margin: auto; }
+
+.cvImg img {
+  width: 100%;
+  min-width: 200px;
+  mask-image: linear-gradient(black 80%, tranparent); }
 
 h2 {
   color: yellow;
   padding-top: 20px; }
 
-article {
+.cvArt {
+  margin: auto;
   padding-top: 20px;
   padding-left: 10px;
   color: yellow;
-  width: 25vw;
-  font-size: 20px; }
-  article strong {
+  width: 70%;
+  min-width: 100px;
+  font-size: 20px;
+  text-wrap: pretty; }
+  .cvArt strong {
     color: aliceblue;
     font-size: 25px; }
-
-img {
-  width: 400px; }
 
 .cvTips {
   padding-top: 50px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .cvTips .cvImg {
+    width: 40%;
+    min-width: 200px; }
 
 .profileCv {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .profileCv .profile img {
-    width: 15vw; }
-  .profileCv article2 {
-    width: 20vw;
-    color: yellowgreen; }
+  .profileCv .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .profileCv .profile img {
+      width: 40%; }
+  .profileCv .artCvInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    min-width: 300px;
+    font-size: 25px;
+    color: yellowgreen;
+    margin: auto; }
   .profileCv label {
     all: unset;
     width: 50px; }
@@ -221,60 +245,43 @@ img {
     align-items: center;
     padding: 25px; }
     .profileCv .fileUp img {
-      width: 50px; }
+      width: 25%; }
 
-.formCv, .checkList {
+.formCv {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 12px; }
-  .formCv label, .checkList label {
+  margin: auto;
+  width: 50%;
+  gap: 10px;
+  margin-top: 20px; }
+  .formCv label {
     color: yellowgreen; }
-  .formCv input, .checkList input {
+  .formCv input {
     width: 90px;
     background-color: yellowgreen; }
 
-.checkList {
+.subForm {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  gap: 10px; }
-  .checkList input {
-    width: 120px; }
-  .checkList .skills, .checkList .idiomas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 250px;
-    border: 2px solid yellowgreen;
-    border-radius: 20px; }
-    .checkList .skills .checkImg img, .checkList .idiomas .checkImg img, .checkList .idiomas .talkGirl img {
-      width: 150px; }
-    .checkList .skills h3, .checkList .idiomas h3, .checkList .skills h4, .checkList .idiomas h4, .checkList .idiomas h5 {
-      color: yellowgreen; }
-  .checkList .check {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    width: 350px; }
-  .checkList .idiomas {
-    height: 400px; }
-    .checkList .idiomas .talkGirl img {
-      border-radius: 100px; }
-    .checkList .idiomas h5 {
-      padding-top: 20px; }
-  .checkList .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+  gap: 10px;
+  margin: 25px; }
+  .subForm label {
+    color: yellowgreen; }
+  .subForm input {
+    width: 90px;
+    background-color: yellowgreen; }
+  .subForm .buttonCv {
+    background-color: aquamarine;
+    width: 5%;
+    height: 40px;
+    min-width: 80px; }
+    .subForm .buttonCv a {
+      color: #6e6464;
+      text-decoration: none; }
 
 .ofertContain {
   display: flex;
@@ -557,26 +564,54 @@ h1, .artEmp {
   justify-content: center;
   align-items: center;
   padding-top: 50px;
-  gap: 10px; }
+  width: 90%;
+  min-width: 300px;
+  gap: 10px;
+  margin: auto; }
   .flexRrhh h6 {
     font-size: 25px;
     color: yellowgreen; }
   .flexRrhh article {
     font-size: 1.5625rem;
     color: antiquewhite;
-    width: 500px; }
+    width: 50%;
+    min-width: 300px; }
+  .flexRrhh .RhBan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .flexRrhh .RhBan img {
+      width: 1%;
+      min-width: 300px; }
 
 .centralGrid {
-  width: 100%;
-  margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(800px, 1fr)); }
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 70%;
+  margin: auto;
+  min-width: 300px; }
 
-.teamGrid {
-  width: 100%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); }
+.teamFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto; }
+
+.preFoot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.joinUs {
+  background-color: aquamarine;
+  width: 10%;
+  min-width: 120px;
+  height: 50px;
+  margin-bottom: 50px; }
 
 .naviBar {
   display: flex;
@@ -713,8 +748,9 @@ h1, .artEmp {
 .bannerMain {
   display: flex; }
   .bannerMain img {
-    width: 100%;
+    width: 80%;
     max-width: 800px;
+    min-width: 300px;
     margin: auto;
     justify-content: center;
     border-radius: 50%; }
@@ -790,25 +826,31 @@ h1, .artEmp {
 
 .cardPostGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   width: 80%;
   max-width: 800px;
   min-width: 200px;
   background-color: #2bdbf3;
   margin: auto;
-  margin-top: 100px;
-  container-type: inline-size;
-  container-name: cardQ; }
+  margin-top: 100px; }
   .cardPostGrid .cardPost {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    min-width: 300px;
     gap: 5px;
     align-items: center; }
-    .cardPostGrid .cardPost .opinionGirl img {
-      width: 90%;
-      max-width: 800px;
-      border-radius: 90%; }
+    .cardPostGrid .cardPost .opinionGirl {
+      width: 80%;
+      min-width: 300px; }
+      .cardPostGrid .cardPost .opinionGirl img {
+        width: 50%;
+        max-width: 800px;
+        min-width: 150px;
+        border-radius: 90%;
+        margin: auto; }
     .cardPostGrid .cardPost span {
       color: white;
       font-family: DM Serif Text;
@@ -938,27 +980,24 @@ h1, .artEmp {
         aspect-ratio: 1/1; }
 
 .banR {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding-top: 100px;
-  gap: 20px;
-  width: 50vw;
-  aspect-ratio: 5 / 1; }
+  width: 70%;
+  margin: auto; }
   .banR .dirImg img {
-    width: 150px;
-    border-radius: 150px; }
-  .banR span {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
-    .banR span p {
+    align-items: center;
+    width: 30%;
+    border-radius: 150px; }
+  .banR .artFrase {
+    width: 100%; }
+    .banR .artFrase p {
       font-size: 1.375rem;
-      color: #c2d18c;
-      width: 500px; }
-    .banR span p2 {
+      color: #c2d18c; }
+    .banR .artFrase p2 {
       font-size: 18px;
       color: antiquewhite;
       text-align: right;
@@ -1124,7 +1163,30 @@ button {
   .redPart .line {
     width: 40px; }
   .redPart .redIco img {
-    width: 20px; } }
+    width: 20px; }
+  .cardPostGrid {
+    background-color: #3f2bf3;
+    min-width: 300px; }
+    .cardPostGrid .cardPost {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .cardPostGrid .cardPost .opinionGirl {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        min-width: 300px; }
+        .cardPostGrid .cardPost .opinionGirl img {
+          width: 50%;
+          min-width: 150px; }
+      .cardPostGrid .cardPost .opinioText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        width: 25%;
+        color: white; } }
 
 @container cardContain(width > 600px) {
   article {

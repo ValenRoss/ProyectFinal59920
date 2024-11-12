@@ -1,7 +1,10 @@
 .flexRrhh{
     @include flex3(column,center,center);
     padding-top: 50px;
+    width: 90%;
+    min-width: 300px;
     gap: 10px;
+    margin: auto;
     h6{
         font-size: 25px;
         color: yellowgreen;
@@ -9,18 +12,39 @@
     article{
         font-size: 1.5625rem;
         color: antiquewhite;
-        width: 500px;
+        width: 50%;
+        min-width: 300px;
+    }
+    .RhBan{
+        @include flex3(column,center,center);
+        img{  
+        width: 1%;
+        min-width: 300px;
+        }
     }
 }
 .centralGrid{
-    width: 100%;
-    margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(800px,1fr));
-}
-.teamGrid{
-    width: 100%;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    width: 70%;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    min-width: 300px;
 }
+.teamFlex{
+    @include flex3(column,center,center);
+    width: 50%;
+    margin: auto;
+}
+.preFoot{
+    @include flex3(column,center,center);
+    }
+.joinUs{
+    background-color: aquamarine;
+    width: 10%;
+    min-width: 120px;
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+    
+
